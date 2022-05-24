@@ -39,7 +39,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/rectangle_notifikasi"/>
+            android:background="@drawable/blue_rectangle_notifikasi"/>
 
         <ImageView
             android:layout_width="50dp"
@@ -71,7 +71,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/rectangle_notifikasi"/>
+            android:background="@drawable/blue_rectangle_notifikasi"/>
 
         <ImageView
             android:layout_width="50dp"
@@ -93,6 +93,8 @@
 
     </RelativeLayout>
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,8 +105,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:backgroundTint="@color/white"
-            android:background="@drawable/rectangle_notifikasi"/>
+            android:background="@drawable/white_rectangle_notifikasi"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
