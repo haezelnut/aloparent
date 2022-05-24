@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_btn"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="Aktivitas Hari ini"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile_pic"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="#D9D9D9"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Putri Hanifah"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 Tahun"
+            android:textColor="@color/textcolor_grey"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heading_image"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belajar Mandiri, makan sendiri"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/textcolor_black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_time"
+            android:text="30 menit"
+            android:drawablePadding="5dp"
+            android:textColor="#6BBDED"
+            android:layout_marginHorizontal="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instruksi Aktivitas"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/textcolor_black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengajari anak makan menggunakan tangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginRight="40dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="20dp"
+            android:text="Langkah pertama, kamu bisa memberikan makanan yang dapat anak genggam, misalnya buah-buahan. Kemudian, bantu mereka memotong makanannya sebelum disuap ke mulut. Setelahnya bisa mengajari mereka menggunakan sendok dan garpu, lalu latih mereka memotong makanannya sendiri. Tapi, tetap dampingi anak saat makan ya."
+            android:layout_marginHorizontal="55dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengajari anak makan menggunakan tangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginRight="40dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="20dp"
+            android:text="Langkah pertama, kamu bisa memberikan makanan yang dapat anak genggam, misalnya buah-buahan. Kemudian, bantu mereka memotong makanannya sebelum disuap ke mulut. Setelahnya bisa mengajari mereka menggunakan sendok dan garpu, lalu latih mereka memotong makanannya sendiri. Tapi, tetap dampingi anak saat makan ya."
+            android:layout_marginHorizontal="55dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengajari anak makan menggunakan tangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginRight="40dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="20dp"
+            android:text="Langkah pertama, kamu bisa memberikan makanan yang dapat anak genggam, misalnya buah-buahan. Kemudian, bantu mereka memotong makanannya sebelum disuap ke mulut. Setelahnya bisa mengajari mereka menggunakan sendok dan garpu, lalu latih mereka memotong makanannya sendiri. Tapi, tetap dampingi anak saat makan ya."
+            android:layout_marginHorizontal="55dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle_orange"
+            android:text="Selesai"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="30dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
