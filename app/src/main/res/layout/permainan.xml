@@ -61,7 +61,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -80,7 +80,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -99,7 +99,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -118,7 +118,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -137,7 +137,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -156,7 +156,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -175,7 +175,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -194,7 +194,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -213,7 +213,7 @@
                     android:text="Tebak Hewan"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/textcolor_black"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
 
