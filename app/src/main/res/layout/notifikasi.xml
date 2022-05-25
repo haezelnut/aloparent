@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Notifikasi"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/blue_rectangle_notifikasi"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/dot_notifikasi"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamu baru saja menyelesaikan aktivitas hari ini, setelah itu jangan lupa ajarkan si kecil mengenal alat - alat makan melalui video yang sudah “Nama Aplikasi” sediakan ya "
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginVertical="10dp"
+            android:lineSpacingExtra="7dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:layout_marginHorizontal="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/blue_rectangle_notifikasi"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/dot_notifikasi"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamu baru saja menyelesaikan aktivitas hari ini, setelah itu jangan lupa ajarkan si kecil mengenal alat - alat makan melalui video yang sudah “Nama Aplikasi” sediakan ya "
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginVertical="10dp"
+            android:lineSpacingExtra="7dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:layout_marginHorizontal="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/white_rectangle_notifikasi"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamu baru saja menyelesaikan aktivitas hari ini, setelah itu jangan lupa ajarkan si kecil mengenal alat - alat makan melalui video yang sudah “Nama Aplikasi” sediakan ya "
+            android:textColor="@color/textcolor_black"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:lineSpacingExtra="7dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

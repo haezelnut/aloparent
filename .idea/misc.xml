@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/ic_launcher_background.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/rectangle_notifikasi.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/test.xml" value="0.231" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.25" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.17074275362318841" />
       </map>
     </option>
   </component>
