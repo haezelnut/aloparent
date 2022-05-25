@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoardingScreen"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
