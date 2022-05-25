@@ -10,4 +10,5 @@
 
     <color name="textcolor_black">#515151</color>
     <color name="textcolor_grey">#888888</color>
+    <color name="dot_unselected">#A9D8F3</color>
 </resources>
