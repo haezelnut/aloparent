@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".favorite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_btn"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Favorit"
+                android:textColor="@color/textcolor_black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/love_icon_vector"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header_video_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Mengenai Kesehatan"
+            android:textSize="15dp"
+            android:layout_marginStart="29dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@id/header_video_information"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/indicatorview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_pager1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="20dp"
+                app:piv_animationType="scale"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_selectedColor="#51A3D1"
+                app:piv_viewPager="@id/view_pager1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/header_image_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artikel Mengenai Kesehatan"
+                android:textSize="15dp"
+                android:layout_marginStart="29dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/header_image_information"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/indicatorview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_pager2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="20dp"
+                app:piv_animationType="scale"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_selectedColor="#51A3D1"
+                app:piv_viewPager="@id/view_pager1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header_permainan_kesehatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permainan mengenai kesehatan"
+            android:textSize="15dp"
+            android:layout_marginStart="29dp"
+            android:fontFamily="@font/poppins_semibold"/>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_marginTop="10dp"
+        android:id="@+id/grid_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="1"
+            android:layout_marginHorizontal="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                >
+
+                <ImageButton
+                    android:id="@+id/tebak_makanan_sehat"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/btn_rectangle_blue"
+                    android:src="@drawable/tebak_makanan_image"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Tebak makanan"
+                    android:textColor="#5B5B5B"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/tebak_hidup_sehat"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/btn_rectangle_orange"
+                        android:src="@drawable/hidup_sehat_image"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Tebak hidup sehat"
+                        android:textColor="#5B5B5B"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                   android:layout_gravity="right"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/tebak_gerak_sehat"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/btn_rectangle_blue"
+                        android:src="@drawable/gerak_sehat_image"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Tebak gerak sehat"
+                        android:textColor="#5B5B5B"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

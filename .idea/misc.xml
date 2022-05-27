@@ -11,6 +11,13 @@
         <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.25" />
         <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.17074275362318841" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1895" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1895" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_favorite.xml" value="0.33" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpager.xml" value="0.16822916666666668" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/notifikasi.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/permainan.xml" value="0.3578125" />
       </map>
     </option>
   </component>
