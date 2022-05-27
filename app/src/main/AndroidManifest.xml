@@ -9,11 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
+
         <activity
             android:name=".favorite"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+        android:name=".LoginScreen"
+        android:exported="false" />
+        <activity
+            android:name=".OnBoardingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
