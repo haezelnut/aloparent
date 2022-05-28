@@ -31,7 +31,7 @@ public class OnBoardingScreen extends AppCompatActivity {
 //            editor.commit();
 //        }
     }
-//
+
 //    private boolean IsOpenAlready() {
 //
 //        SharedPreferences sharedPreferences = getSharedPreferences("slide",MODE_PRIVATE);

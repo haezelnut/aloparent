@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".BerhasilDaftar"
+            android:exported="false" />
+        <activity
+            android:name=".BerhasilLogin"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterScreen"
+            android:exported="false" />
+        <activity
             android:name=".LoginScreen"
             android:exported="false" />
         <activity

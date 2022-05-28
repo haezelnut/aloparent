@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LoginScreen">
+    tools:context=".RegisterScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Masuk Akun"
+        android:text="Daftar Akun"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toEndOf="@+id/backToLogin"
+        app:layout_constraintStart_toEndOf="@+id/backToRegister"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.057" />
 
     <ImageButton
-        android:id="@+id/backToLogin"
+        android:id="@+id/backToRegister"
+        android:onClick="backToRegister"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="30dp"
@@ -34,11 +40,47 @@
         app:srcCompat="@drawable/ic_arrowback" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtNamaOrangTua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama Orang Tua"
+        android:textColor="#515151"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/inputNamaOrangTua"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_edittext"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Masukkan nama orang tua"
+        android:textColorHint="#80515151"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNamaOrangTua" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Email"
         android:textColor="#515151"
@@ -46,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/inputNamaOrangTua" />
 
     <EditText
         android:id="@+id/inputEmailLogin"
@@ -67,14 +109,14 @@
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtKataSandi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Kata Sandi"
         android:textColor="#515151"
@@ -85,7 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin" />
 
     <EditText
-        android:id="@+id/inputPasswordLogin"
+        android:id="@+id/inputPasswordDaftar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -105,27 +147,49 @@
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtKataSandi" />
 
     <TextView
-        android:id="@+id/forgetPassText"
+        android:id="@+id/txtKonfirmasiKataSandi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Lupa Kata Sandi?"
-        android:textAllCaps="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Konfirmasi Kata Sandi"
         android:textColor="#515151"
-        android:textSize="14sp"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPasswordLogin" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordDaftar" />
+
+    <EditText
+        android:id="@+id/inputKonfirmasiPasswordDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_edittext"
+        android:drawableRight="@drawable/ic_visibility_off"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Masukkan kata sandi"
+        android:textColorHint="#80515151"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKonfirmasiKataSandi" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnMasuk"
-        android:onClick="btnMasuk"
+        android:id="@+id/btnDaftar"
+        android:onClick="btnDaftar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="30dp"
@@ -133,12 +197,47 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/btn_rectangle_orange"
         android:fontFamily="@font/poppins_bold"
-        android:text="Masuk Sekarang"
+        android:text="Daftar Sekarang"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgetPassText" />
+        app:layout_constraintTop_toBottomOf="@+id/inputKonfirmasiPasswordDaftar" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ketentuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDaftar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="10dp"
+            android:textColor="#5B5B5B"
+            android:text="Dengan mendaftarkan akun, anda menyetujui"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="syarat dan ketentuan"
+            android:textColor="#5B5B5B"
+            android:textSize="10dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -147,7 +246,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMasuk"
+        app:layout_constraintTop_toBottomOf="@+id/ketentuan"
         app:srcCompat="@drawable/line_login" />
 
     <ImageButton
@@ -181,6 +280,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -192,7 +292,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
-            android:text="Belum jadi seller?"
+            android:text="Sudah punya akun?"
             android:textColor="#5B5B5B"
             android:textSize="14sp" />
 
@@ -203,10 +303,12 @@
             android:layout_marginStart="5dp"
             android:clickable="true"
             android:fontFamily="@font/poppins_bold"
-            android:onClick="toRegister"
-            android:text="Daftar"
+            android:onClick="toLogin"
+            android:text="Masuk"
             android:textColor="#5B5B5B"
             android:textSize="14sp" />
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
