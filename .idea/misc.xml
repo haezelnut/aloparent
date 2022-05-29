@@ -3,19 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/blue_rectangle_notifikasi.xml" value="0.19" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.19" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/dot_selected.xml" value="0.19" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/dot_unselected.xml" value="0.19" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_login_screen.xml" value="0.17074275362318841" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.17074275362318841" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_spalshscreen.xml" value="0.151268115942029" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.151268115942029" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.151268115942029" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/permainan.xml" value="0.151268115942029" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
-
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/ic_launcher_background.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/rectangle_notifikasi.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/test.xml" value="0.231" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.161" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.25" />
+        <entry key="..\:/Android Studio/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.17074275362318841" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/blue_rectangle_notifikasi.xml" value="0.211" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_ractangle.xml" value="0.211" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1895" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1895" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/gradient_rectangle.xml" value="0.211" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_edukasi_icon.xml" value="0.196" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_home.xml" value="0.196" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_home_icon.xml" value="0.1635" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_kelas_icon.xml" value="0.1635" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_konseling.xml" value="0.196" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/navbar_selector.xml" value="0.1635" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_notificaton.xml" value="0.191" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_favorite.xml" value="0.33" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_login_screen.xml" value="0.18229166666666666" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.18229166666666666" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_spalshscreen.xml" value="0.18229166666666666" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpager.xml" value="0.16822916666666668" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/navbar_selector.xml" value="0.18229166666666666" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/notifikasi.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/permainan.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/menu/menu_navigation.xml" value="0.3578125" />
       </map>
     </option>
   </component>

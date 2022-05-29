@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
-
+        <activity
+            android:name=".Home"
+            android:exported="false" />
         <activity
             android:name=".favorite"
             android:exported="false" />
         <activity
-        android:name=".LoginScreen"
-        android:exported="false" />
+            android:name=".LoginScreen"
+            android:exported="false" />
         <activity
             android:name=".OnBoardingScreen"
             android:exported="false" />
