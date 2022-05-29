@@ -51,14 +51,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:progressDrawable="@drawable/progress_bar_color"
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_height="13dp"/>
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
