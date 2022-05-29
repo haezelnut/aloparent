@@ -1,21 +1,31 @@
 package com.example.aloparent;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
+import com.github.dhaval2404.imagepicker.ImagePicker;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Calendar;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UpdateDataAnak extends AppCompatActivity {
 
     private DatePickerDialog datePickerDialog;
+    private AppCompatButton btn_TakePhoto;
     private Button btn_DatePicker;
+    private CircleImageView img_Profile;
 
 
     @Override
@@ -24,9 +34,23 @@ public class UpdateDataAnak extends AppCompatActivity {
         setContentView(R.layout.activity_update_data_anak);
         initDatePicker();
         btn_DatePicker = findViewById(R.id.btn_DatePicker);
+        btn_TakePhoto = findViewById(R.id.btn_TakePhoto);
+        img_Profile = findViewById(R.id.img_Profile);
+        btn_TakePhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImagePicker.with(UpdateDataAnak.this)
+                        .cropSquare()
+                        .maxResultSize(1080,1080)
+                        .compress(1024)			//Final image size will be less than 1 MB(Optional)
+                        .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
+                        .start();
+            }
+        });
         btn_DatePicker.setText(getTodayDate());
     }
 
+    //Date Code
     private String getTodayDate() {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
@@ -35,7 +59,6 @@ public class UpdateDataAnak extends AppCompatActivity {
         int day = cal.get(Calendar.DAY_OF_MONTH);
         return makeDateString(day, month, year);
     }
-
     private void initDatePicker(){
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -53,11 +76,9 @@ public class UpdateDataAnak extends AppCompatActivity {
 
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
     }
-
     private String makeDateString(int day, int month, int year){
         return day + " " + getMonthFormat(month)  + " " + year;
     }
-
     private String getMonthFormat(int month) {
         if(month == 1)
             return "Januari";
@@ -86,8 +107,16 @@ public class UpdateDataAnak extends AppCompatActivity {
 
         return "Januari";
     }
-
     public void openDatePicker(View view){
         datePickerDialog.show();
+    }
+
+    //Image Photo Code
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Uri uri = data.getData();
+        img_Profile.setImageURI(uri);
     }
 }
