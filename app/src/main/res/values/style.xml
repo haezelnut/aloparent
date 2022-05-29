@@ -4,6 +4,8 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">20dp</item>
         <item name="color">@color/white</item>
+        <item name="elevation">10dp</item>
+        <item name="elevationOverlayEnabled">true</item>
     </style>
 
 </resources>

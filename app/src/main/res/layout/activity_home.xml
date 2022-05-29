@@ -76,7 +76,8 @@
                         android:src="@drawable/rectangle_notificaton"
 
 
-                        app:layout_constraintEnd_toEndOf="parent" />
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -136,7 +137,7 @@
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Kategori favori para Mama"
+                android:text="Kategori favorit para Mama"
                 android:textSize="13dp"
 
                 />
@@ -144,7 +145,8 @@
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="30dp">
+                android:layout_marginTop="10dp"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -152,6 +154,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:layout_marginLeft="30dp"
                         android:layout_width="90dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/btn_rectangle_orange"
@@ -196,7 +199,9 @@
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:layout_marginRight="30dp"
+                       />
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -222,11 +227,13 @@
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        style="@style/roundImageView"
                         android:layout_width="180dp"
                         android:layout_height="160dp"
-                        android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
-                        android:elevation="10dp">
+                        android:background="@drawable/btn_ractangle"
+                        android:elevation="10dp"
+                        android:layout_marginLeft="30dp">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -242,6 +249,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/gradient_rectangle"
                             android:fontFamily="@font/poppins_semibold"
                             android:gravity="bottom"
                             android:padding="19dp"
@@ -253,26 +261,26 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        style="@style/roundImageView"
                         android:layout_width="180dp"
                         android:layout_height="160dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_ractangle"
+                        android:elevation="10dp"
+                        android:layout_marginRight="30dp">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/artikel_untuk_mama"
-                            app:shapeAppearanceOverlay="@style/roundImageView"
-                            android:elevation="10dp"/>
+                            app:shapeAppearanceOverlay="@style/roundImageView" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/gradient_rectangle" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/gradient_rectangle"
                             android:fontFamily="@font/poppins_semibold"
                             android:gravity="bottom"
                             android:padding="19dp"
@@ -355,7 +363,7 @@
                             android:layout_marginTop="6dp"
                             android:fontFamily="@font/poppins_medium"
                             android:gravity="center"
-                            android:text="Tebak makanan"
+                            android:text="Tebak Hewan"
                             android:textColor="#5B5B5B"
                             android:textSize="13dp" />
 
@@ -381,10 +389,10 @@
                             android:layout_width="85dp"
                             android:layout_height="85dp"
                             android:background="#ED6BD0"
-                            android:src="@drawable/mengenal_alam_image"
-                            app:shapeAppearanceOverlay="@style/roundImageView"
                             android:elevation="10dp"
-                            app:contentPaddingTop="15dp"/>
+                            android:src="@drawable/mengenal_alam_image"
+                            app:contentPaddingTop="15dp"
+                            app:shapeAppearanceOverlay="@style/roundImageView" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -420,9 +428,9 @@
                             android:layout_height="85dp"
                             android:background="#AC6BED"
                             android:elevation="10dp"
-                            app:shapeAppearanceOverlay="@style/roundImageView"
                             android:src="@drawable/tebak_alat_makan_image"
-                            app:contentPadding="5dp"/>
+                            app:contentPadding="5dp"
+                            app:shapeAppearanceOverlay="@style/roundImageView" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -431,7 +439,7 @@
                             android:layout_marginTop="6dp"
                             android:fontFamily="@font/poppins_medium"
                             android:gravity="center"
-                            android:text="Tebak gerak sehat"
+                            android:text="Tebak Gerak Sehat"
                             android:textColor="#5B5B5B"
                             android:textSize="13dp" />
 
@@ -445,7 +453,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"/>
+                android:layout_height="110dp" />
 
         </LinearLayout>
 

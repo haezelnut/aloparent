@@ -166,12 +166,14 @@
                 android:layout_gravity="left"
                 >
 
-                <ImageButton
+                <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/tebak_makanan_sehat"
                     android:layout_width="85dp"
                     android:layout_height="85dp"
-                    android:background="@drawable/btn_rectangle_blue"
+                    app:shapeAppearanceOverlay="@style/roundImageView"
+                    android:background="#6BBDED"
                     android:src="@drawable/tebak_makanan_image"
+                    android:elevation="10dp"
                     />
 
                 <TextView
@@ -203,12 +205,14 @@
                     android:layout_gravity="center"
                     >
 
-                    <ImageButton
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/tebak_hidup_sehat"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
-                        android:background="@drawable/btn_rectangle_orange"
+                        app:shapeAppearanceOverlay="@style/roundImageView"
+                        android:background="#FFBE3C"
                         android:src="@drawable/hidup_sehat_image"
+                        android:elevation="10dp"
                         />
 
                     <TextView
@@ -240,11 +244,13 @@
                    android:layout_gravity="right"
                     >
 
-                    <ImageButton
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/tebak_gerak_sehat"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
-                        android:background="@drawable/btn_rectangle_blue"
+                        android:elevation="10dp"
+                        app:shapeAppearanceOverlay="@style/roundImageView"
+                        android:background="#6BBDED"
                         android:src="@drawable/gerak_sehat_image"
                         />
 
