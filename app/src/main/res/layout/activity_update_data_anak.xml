@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UpdateDataAnak">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Data Anak"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="136dp"
+        android:id="@+id/img_Profile"
+        android:layout_height="136dp"
+        android:src="@drawable/games_image"
+        app:civ_border_color="#6BBDED"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/heading"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_TakePhoto"
+        android:background="@drawable/ic_picture"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="90dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_Profile"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Nama Lengkap Anak"
+            android:textColor="#515151"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:id="@+id/editText_NamaLengkapAnak"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/rectangle_edittext"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Masukkan nama lengkap anak"
+            android:textColorHint="#80515151"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Nama Panggilan Anak"
+            android:textColor="#515151"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:id="@+id/editText_NamaPanggilanAnak"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/rectangle_edittext"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Masukkan nama panggilan anak"
+            android:textColorHint="#80515151"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Jenis Kelamin Anak"
+            android:textColor="#515151"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="13dp"
+                android:textColor="#939393"
+                android:text="Laki - Laki"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="13dp"
+                android:textColor="#939393"
+                android:text="Perempuan"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tanggal Lahir Anak"
+            android:textColor="#515151"
+            android:textSize="15dp"/>
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_DatePicker"
+            android:text="29 Januari 2022"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#939393"
+            android:onClick="openDatePicker"
+            android:textSize="13dp"
+            style="?android:spinnerStyle"
+            android:elevation="10dp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:id="@+id/btn_Simpan"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Simpan Data Anak"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/btn_rectangle_orange"
+        android:paddingVertical="15dp"
+        android:layout_marginHorizontal="30dp"/>
+</RelativeLayout>
