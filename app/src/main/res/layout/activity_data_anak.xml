@@ -35,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#6BBDED"
+        app:cardElevation="10dp"
         android:layout_below="@id/heading"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="15dp"
@@ -107,20 +108,16 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_alignParentBottom="true">
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tambah Data Anak"
             android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_semibold"
             android:background="@drawable/btn_rectangle_orange"
             android:paddingVertical="15dp"
             android:layout_marginHorizontal="30dp"/>
-    </RelativeLayout>
 </RelativeLayout>
