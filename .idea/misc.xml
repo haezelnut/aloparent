@@ -3,6 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1045" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1045" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_lock.xml" value="0.1045" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_nextbtn.xml" value="0.1045" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_open_lock.xml" value="0.1045" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_orangerectangle.xml" value="0.161" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/progress_bar_color.xml" value="0.159" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.159" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_artikel.xml" value="0.1" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.1" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.1" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_data_anak.xml" value="0.5" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_login_screen.xml" value="0.33" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_media_player.xml" value="0.1" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.25" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/activity_video_hari_ini.xml" value="0.25" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.1" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/custom_controller.xml" value="0.25" />
+        <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/blue_rectangle_notifikasi.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/btn_back.xml" value="0.19" />
