@@ -29,9 +29,10 @@
             android:name=".UpdateDataAnak"
             android:exported="true" />
         <activity
-            android:name=".DataAnak"
+            android:name=".Home"
             android:exported="false" />
         <activity
+
             android:name=".BerhasilDaftar"
             android:exported="false" />
         <activity
@@ -41,14 +42,20 @@
             android:name=".RegisterScreen"
             android:exported="false" />
         <activity
-            android:name=".LoginScreen"
-            android:exported="false" />
+        android:name=".LoginScreen"
+        android:exported="false" />
         <activity
             android:name=".OnBoardingScreen"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
