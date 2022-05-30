@@ -14,6 +14,5 @@ public class VideoHariIni extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_hari_ini);
-        video_player = findViewById(R.id.video_player);
     }
 }

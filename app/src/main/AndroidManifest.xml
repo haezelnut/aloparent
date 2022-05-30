@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".Artikel"
+            android:exported="false" />
+        <activity
             android:name=".MediaPlayer"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
         </activity>
         <activity
             android:name=".UpdateDataAnak"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".DataAnak"
             android:exported="false" />
