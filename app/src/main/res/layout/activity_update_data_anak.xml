@@ -15,7 +15,6 @@
 
         <ImageView
             android:id="@+id/backDataAnak"
-            android:onClick="backDataAnak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -179,7 +178,6 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/btn_rectangle_orange"
         android:fontFamily="@font/poppins_semibold"
-        android:onClick="btnSimpan"
         android:paddingVertical="15dp"
         android:text="Simpan Data Anak"
         android:textAllCaps="false"

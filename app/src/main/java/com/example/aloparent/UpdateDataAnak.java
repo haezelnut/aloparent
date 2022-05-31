@@ -52,7 +52,7 @@ public class UpdateDataAnak extends AppCompatActivity {
 
 
 
-        btn_simpan =(AppCompatButton) findViewById(R.id.btn_Simpan);
+        btn_simpan =(AppCompatButton) findViewById(R.id.btnSimpan);
 
         Home.layout2.setVisibility(View.GONE);
 
