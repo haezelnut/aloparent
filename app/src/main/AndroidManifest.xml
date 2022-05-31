@@ -6,9 +6,23 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
+        <activity
+            android:name=".Artikel"
+            android:exported="false" />
+        <activity
+            android:name=".MediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".VideoHariIni"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".UpdateDataAnak"
+            android:exported="true" />
         <activity
             android:name=".Home"
             android:exported="false" />
@@ -23,8 +37,8 @@
             android:name=".RegisterScreen"
             android:exported="false" />
         <activity
-            android:name=".LoginScreen"
-            android:exported="false" />
+        android:name=".LoginScreen"
+        android:exported="false" />
         <activity
             android:name=".OnBoardingScreen"
             android:exported="false" />
