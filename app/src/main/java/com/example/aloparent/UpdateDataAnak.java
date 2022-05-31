@@ -6,12 +6,17 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
 
@@ -21,19 +26,27 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UpdateDataAnak extends AppCompatActivity {
 
+    Button btnSimpan;
+    Dialog dialog;
 
     private DatePickerDialog datePickerDialog;
     private AppCompatButton btn_TakePhoto;
     private Button btn_DatePicker;
     private CircleImageView img_Profile;
+
     private AppCompatButton btn_simpan;
+
+    public void backDataAnak(View v){
+        Intent intent = new Intent(UpdateDataAnak.this, Home.class);
+        startActivity(intent);
+    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_data_anak);
-       initDatePicker();
+        initDatePicker();
         btn_DatePicker = findViewById(R.id.btn_DatePicker);
         btn_TakePhoto = findViewById(R.id.btn_TakePhoto);
         img_Profile = findViewById(R.id.img_Profile);
@@ -50,14 +63,43 @@ public class UpdateDataAnak extends AppCompatActivity {
         });
         btn_DatePicker.setText(getTodayDate());
 
+        //pop up dialogbox
+        btnSimpan = findViewById(R.id.btnSimpan);
+        dialog = new Dialog(this);
 
+        btnSimpan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBerhasilSimpan();
+            }
+            private void openBerhasilSimpan() {
+                dialog.setContentView(R.layout.data_berhasil_disimpan);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                Button lihatData = dialog.findViewById(R.id.lihatData);
+
+
+                lihatData.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(UpdateDataAnak.this, Home.class);
+                        startActivity(intent);
+                        Toast.makeText(UpdateDataAnak.this, "Data telah disimpan", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                dialog.show();
+            }
+        });
+
+        //visible invisble home 1 and 2
 
         btn_simpan =(AppCompatButton) findViewById(R.id.btnSimpan);
 
         Home.layout2.setVisibility(View.GONE);
 
 
-         btn_simpan.setOnClickListener(new View.OnClickListener() {
+        btn_simpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -68,12 +110,11 @@ public class UpdateDataAnak extends AppCompatActivity {
                 Home.layout1.setVisibility(View.GONE);
                 Home.layout2.setVisibility(View.VISIBLE);
 
-               finish();
+                finish();
 
             }
         });
     }
-
 
     //Date Code
     private String getTodayDate() {
