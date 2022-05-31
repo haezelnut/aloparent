@@ -6,12 +6,17 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
 
@@ -20,6 +25,13 @@ import java.util.Calendar;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UpdateDataAnak extends AppCompatActivity {
+    Button btnSimpan;
+    Dialog dialog;
+
+    public void backDataAnak(View v){
+        Intent intent = new Intent(UpdateDataAnak.this, Home.class);
+        startActivity(intent);
+    }
 
     private DatePickerDialog datePickerDialog;
     private AppCompatButton btn_TakePhoto;
@@ -47,6 +59,35 @@ public class UpdateDataAnak extends AppCompatActivity {
             }
         });
         btn_DatePicker.setText(getTodayDate());
+
+        //pop up dialogbox
+        btnSimpan = findViewById(R.id.btnSimpan);
+        dialog = new Dialog(this);
+
+        btnSimpan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBerhasilSimpan();
+            }
+            private void openBerhasilSimpan() {
+                dialog.setContentView(R.layout.data_berhasil_disimpan);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                Button lihatData = dialog.findViewById(R.id.lihatData);
+
+
+                lihatData.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(UpdateDataAnak.this, Home.class);
+                        startActivity(intent);
+                        Toast.makeText(UpdateDataAnak.this, "Data telah disimpan", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                dialog.show();
+            }
+        });
     }
 
     //Date Code

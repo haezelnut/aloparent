@@ -31,18 +31,26 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_arrowback.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_baseline_visibility_off_24.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_play.xml" value="0.1" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.22" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_data_anak.xml" value="0.25" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_home.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_login_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_register_screen.xml" value="0.25" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_spalshscreen.xml" value="0.151268115942029" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_spalshscreen.xml" value="0.22" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.17074275362318841" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_video_hari_ini.xml" value="0.17074275362318841" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/adapter_viewpager.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.151268115942029" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.33" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/permainan.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
       </map>
     </option>
   </component>
