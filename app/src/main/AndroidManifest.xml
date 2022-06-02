@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".EdukasiScreen"
+            android:exported="false" />
+        <activity
+            android:name=".PanduanOrangTuaScreen"
+            android:exported="false" />
+        <activity
             android:name=".Artikel"
             android:exported="false" />
         <activity
@@ -18,8 +24,7 @@
             android:exported="false" />
         <activity
             android:name=".VideoHariIni"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".UpdateDataAnak"
             android:exported="true" />
@@ -27,7 +32,6 @@
             android:name=".Home"
             android:exported="false" />
         <activity
-
             android:name=".BerhasilDaftar"
             android:exported="false" />
         <activity
@@ -37,8 +41,8 @@
             android:name=".RegisterScreen"
             android:exported="false" />
         <activity
-        android:name=".LoginScreen"
-        android:exported="false" />
+            android:name=".LoginScreen"
+            android:exported="false" />
         <activity
             android:name=".OnBoardingScreen"
             android:exported="false" />

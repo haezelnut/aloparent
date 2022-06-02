@@ -25,10 +25,6 @@ public class RegisterScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void backToRegister(View v){
-        Intent intent = new Intent(RegisterScreen.this, LoginScreen.class);
-        startActivity(intent);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
