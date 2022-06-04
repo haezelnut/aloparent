@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ProfileScreen">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="30dp">
+    tools:context=".UpdateProfile">
 
 
     <ImageButton
-        android:id="@+id/backFormProfile"
-        android:onClick="backFormProfile"
+        android:id="@+id/backFormUbahData"
+        android:onClick="backFormUbahData"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:background="@null"
@@ -36,7 +31,7 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.356"
-        app:layout_constraintStart_toEndOf="@+id/backFormProfile"
+        app:layout_constraintStart_toEndOf="@+id/backFormUbahData"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -76,11 +71,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
 
-    <TextView
+    <EditText
         android:id="@+id/inputNamaOrangTua"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center_vertical"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
@@ -88,11 +82,12 @@
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Lesti Cahyani"
+        android:hint="Masukkan nama orang tua"
+        android:textColorHint="#80515151"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
-        android:textColor="#515151"
-        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNamaOrangTua" />
@@ -112,11 +107,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNamaOrangTua" />
 
-    <TextView
+    <EditText
         android:id="@+id/inputEmailLogin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center_vertical"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
@@ -124,36 +118,19 @@
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
-        android:text="lesticahyani@gmail.com"
+        android:hint="Masukkan alamat email"
+        android:textColorHint="#80515151"
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
-        android:textColor="#515151"
-        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnUbahData"
-            android:onClick="btnUbahData"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ubah Data"
-            android:textAllCaps="false"
-            android:textColor="#FFBE3C"
-            android:fontFamily="@font/poppins_bold"
-            android:textSize="15dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/btn_ubahdata"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin" />
-
-        <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSimpanData"
+        android:onClick="btnSimpanData"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="30dp"
@@ -170,9 +147,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUbahData"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin"
         app:layout_constraintVertical_bias="0.854" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>

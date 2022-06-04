@@ -35,6 +35,11 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void profile(View v){
+        Intent intent = new Intent(Home.this, ProfileScreen.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
-            android:name=".ProfileScreen"
+            android:name=".UpdateProfile"
             android:exported="false" />
         <activity
-            android:name=".EdukasiScreen"
+            android:name=".ProfileScreen"
             android:exported="false" />
         <activity
             android:name=".PanduanOrangTuaScreen"
