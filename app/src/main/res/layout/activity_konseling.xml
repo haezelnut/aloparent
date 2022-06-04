@@ -7,8 +7,9 @@
     tools:context=".Konseling">
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bottom_navigation"
+       android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="10dp"
@@ -164,7 +165,6 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/tebak_makanan_sehat"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="#6BBDED"
@@ -203,7 +203,6 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/tebak_hidup_sehat"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="#ED6BD0"
@@ -242,9 +241,8 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/tebak_gerak_sehat"
                         android:layout_width="85dp"
-                        android:layout_height="85dp"
+                        android:layout_height="86dp"
                         android:background="#AC6BED"
                         android:elevation="10dp"
                         android:src="@drawable/image_kesehatan_konseling"
@@ -323,7 +321,6 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/tebak_hidup_sehat"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="#ED6B6B"
@@ -368,6 +365,10 @@
 
 
         </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp" />
 
 
     </LinearLayout>

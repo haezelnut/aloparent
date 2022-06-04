@@ -4,24 +4,24 @@
 
     <item
         android:id="@+id/beranda"
-        android:title="Berandaa"
-        android:icon="@drawable/ic_home"
+        android:title="berandaa"
+        android:icon="@drawable/ic_hone"
         />
 
     <item
-        android:id="@+id/Kelas"
+        android:id="@+id/kelas"
         android:title="Kelas"
         android:icon="@drawable/ic_kelas_icon"
         />
 
     <item
-        android:id="@+id/Edukasi"
+        android:id="@+id/edukasi"
         android:title="Edukasi"
         android:icon="@drawable/ic_edukasi_icon"
         />
 
     <item
-        android:id="@+id/Konseling"
+        android:id="@+id/konseling"
         android:title="Konseling"
         android:icon="@drawable/ic_konseling"
         />

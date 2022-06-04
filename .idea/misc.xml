@@ -17,13 +17,16 @@
         <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1895" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1895" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/gradient_rectangle.xml" value="0.211" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1445" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_edukasi_icon.xml" value="0.196" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_home.xml" value="0.196" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_home_icon.xml" value="0.1635" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_hone.xml" value="0.1675" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_kelas_icon.xml" value="0.1635" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_konseling.xml" value="0.196" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_nextbtn.xml" value="0.1935" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_play.xml" value="0.1045" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_search.xml" value="0.1445" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/navbar_selector.xml" value="0.1635" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.1935" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_notificaton.xml" value="0.191" />
@@ -31,9 +34,11 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.18229166666666666" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.18229166666666666" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_data_anak.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_edukasi.xml" value="0.25" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_favorite.xml" value="0.33" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.2533889468196038" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home2.xml" value="0.3578125" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.2812006319115324" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konseling.xml" value="0.33" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_login_screen.xml" value="0.33" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_media_player.xml" value="0.3578125" />
@@ -42,6 +47,7 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_spalshscreen.xml" value="0.18229166666666666" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.33" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_video_hari_ini.xml" value="0.18" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpage_video.xml" value="0.2" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpager.xml" value="0.16822916666666668" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.3578125" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/custom_controller.xml" value="0.3578125" />
