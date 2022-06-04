@@ -61,6 +61,8 @@ public class UpdateDataAnak extends AppCompatActivity {
                         .start();
             }
         });
+
+
         btn_DatePicker.setText(getTodayDate());
 
         //pop up dialogbox
@@ -70,6 +72,14 @@ public class UpdateDataAnak extends AppCompatActivity {
         btnSimpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // merubah tampilan home 1 ke home 2 setelah data anak diimput
+
+                Home.inputDataAnak.setVisibility(View.GONE);
+                Home.dataAnak.setVisibility(View.VISIBLE);
+                Home.layout1.setVisibility(View.GONE);
+                Home.layout2.setVisibility(View.VISIBLE);
+
                 openBerhasilSimpan();
             }
             private void openBerhasilSimpan() {
@@ -84,7 +94,7 @@ public class UpdateDataAnak extends AppCompatActivity {
                     public void onClick(View view) {
 
                         Intent intent = new Intent(UpdateDataAnak.this, Home.class);
-                        startActivity(intent);
+                        finish();
                         Toast.makeText(UpdateDataAnak.this, "Data telah disimpan", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -94,7 +104,7 @@ public class UpdateDataAnak extends AppCompatActivity {
 
         //visible invisble home 1 and 2
 
-        btn_simpan =(AppCompatButton) findViewById(R.id.btnSimpan);
+        /* btn_simpan =(AppCompatButton) findViewById(R.id.btnSimpan);
 
         Home.layout2.setVisibility(View.GONE);
 
@@ -113,7 +123,7 @@ public class UpdateDataAnak extends AppCompatActivity {
                 finish();
 
             }
-        });
+        }); */
     }
 
     //Date Code
