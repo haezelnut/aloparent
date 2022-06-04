@@ -42,6 +42,7 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/foto_profil_orangtua"
+                    android:onClick="profile"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/foto_profil_lesti" />
