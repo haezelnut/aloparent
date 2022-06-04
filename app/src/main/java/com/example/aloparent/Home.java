@@ -29,7 +29,43 @@ public class Home extends AppCompatActivity {
     ArrayList<Integer> images = new ArrayList<>();
     ViewPagerAdapter adapter;
 
+    //inten ke halaman notikasi
+    public void toNotifikasi(View v){
+        Intent intent = new Intent(Home.this, Notifikasi.class);
+        startActivity(intent);
+    }
 
+    //imtemt ke halaman artikel
+    public void allArticel(View v){
+        Intent intent = new Intent(Home.this, Artikel.class);
+        startActivity(intent);
+    }
+
+    //ke halaman semua data anak
+    public void anotherChildData(View v){
+        Intent intent = new Intent(Home.this, DataAnak.class);
+        startActivity(intent);
+    }
+
+    //intent ke halaman favorit kesehatan
+    public void kesehatanFavorit(View v){
+        Intent intent = new Intent(Home.this, favorite.class);
+        startActivity(intent);
+    }
+
+    // intent ke halaman semua permaianan
+    public void allGames(View v){
+        Intent intent = new Intent(Home.this, Permainan.class);
+        startActivity(intent);
+    }
+
+    //intent ke halaman video hari ini
+    public void allVideoToDay(View v){
+        Intent intent = new Intent(Home.this, VideoHariIni.class);
+        startActivity(intent);
+    }
+
+    // intent ke halaman input data anak
     public void inputDataAnak(View v){
         Intent intent = new Intent(Home.this, UpdateDataAnak.class);
         startActivity(intent);

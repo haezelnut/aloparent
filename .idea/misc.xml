@@ -54,6 +54,14 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/permainan.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.158" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_notificaton.xml" value="0.158" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.158" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_data_anak.xml" value="0.22447916666666667" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.22" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konseling.xml" value="0.33" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/notifikasi.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
