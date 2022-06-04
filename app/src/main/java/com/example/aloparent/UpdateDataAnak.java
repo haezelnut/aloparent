@@ -36,9 +36,8 @@ public class UpdateDataAnak extends AppCompatActivity {
 
     private AppCompatButton btn_simpan;
 
-    public void backDataAnak(View v){
-        Intent intent = new Intent(UpdateDataAnak.this, Home.class);
-        startActivity(intent);
+    public void backFromUpdateDataAnak(View v){
+            onBackPressed();
     }
 
 

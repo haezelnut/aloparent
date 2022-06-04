@@ -3,11 +3,18 @@ package com.example.aloparent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
 public class favorite extends AppCompatActivity {
+
+    public void backFromFavoritKesehatan(View v){
+        Intent intent = new Intent(favorite.this, Home.class);
+        startActivity(intent);
+    }
 
     ViewPager viewPager;
     ArrayList<Integer> images = new ArrayList<>();

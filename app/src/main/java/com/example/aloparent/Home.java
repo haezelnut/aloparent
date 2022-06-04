@@ -29,6 +29,12 @@ public class Home extends AppCompatActivity {
     ArrayList<Integer> images = new ArrayList<>();
     ViewPagerAdapter adapter;
 
+    //inetnt ke profil orang tua
+    public void ToProfile(View v){
+        Intent intent = new Intent(Home.this, ProfileScreen.class);
+        startActivity(intent);
+    }
+
     //inten ke halaman notikasi
     public void toNotifikasi(View v){
         Intent intent = new Intent(Home.this, Notifikasi.class);

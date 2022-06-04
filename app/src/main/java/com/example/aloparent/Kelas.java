@@ -12,6 +12,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Kelas extends AppCompatActivity {
 
+    public void kePembelajaran1(View v){
+        Intent intent = new Intent(Kelas.this, PanduanOrangTuaScreen.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

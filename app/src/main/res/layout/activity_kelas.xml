@@ -171,6 +171,7 @@
                 />
 
             <RelativeLayout
+                android:onClick="kePembelajaran1"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"

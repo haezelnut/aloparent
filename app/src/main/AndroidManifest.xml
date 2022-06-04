@@ -11,13 +11,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".PanduanOrangTuaScreen"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateDataAnak"
+            android:exported="false" />
+        <activity
             android:name=".UpdateProfile"
             android:exported="false" />
         <activity
             android:name=".ProfileScreen"
             android:exported="false" />
         <activity
-            android:name=".PanduanOrangTuaScreen"
+            android:name=".Notifikasi"
+            android:exported="false" />
+        <activity
+            android:name=".DataAnak"
+            android:exported="false" />
+        <activity
+            android:name=".favorite"
+            android:exported="false" />
+        <activity
+            android:name=".Edukasi"
+            android:exported="false" />
+        <activity
+            android:name=".Konseling"
+            android:exported="false" />
+        <activity
+            android:name=".Kelas"
             android:exported="false" />
         <activity
             android:name=".Artikel"
@@ -28,9 +49,6 @@
         <activity
             android:name=".VideoHariIni"
             android:exported="false" />
-        <activity
-            android:name=".UpdateDataAnak"
-            android:exported="true" />
         <activity
             android:name=".Home"
             android:exported="false" />
