@@ -102,14 +102,14 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:onClick="toUpdateDataAnak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/btn_rectangle_orange"
         android:fontFamily="@font/poppins_semibold"
+        android:onClick="toUpdateDataAnak"
         android:paddingVertical="15dp"
         android:text="Tambah Data Anak"
         android:textAllCaps="false"

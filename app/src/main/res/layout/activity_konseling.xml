@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Konseling">
 
 
@@ -69,10 +70,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:textSize="20dp"
-                android:gravity="center"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Konseling" />
+                android:gravity="center"
+                android:text="Konseling"
+                android:textColor="#515151"
+                android:textSize="20dp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="37dp"
@@ -140,7 +142,8 @@
             android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="Pilih Ahli Sesuai Kategori"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:textColor="#515151"/>
 
         <GridLayout
             android:id="@+id/grid_main_menu"
@@ -163,6 +166,7 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
+                    android:background="@color/white"
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
@@ -201,6 +205,7 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:background="@color/white"
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
@@ -238,6 +243,7 @@
                 <LinearLayout
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
+                    android:background="@color/white"
                     android:layout_gravity="right"
                     android:orientation="vertical">
 
@@ -357,6 +363,7 @@
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="right"
+                    android:background="@color/white"
                     android:orientation="vertical">
 
 

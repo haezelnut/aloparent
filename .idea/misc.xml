@@ -34,51 +34,36 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_play.xml" value="0.1" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.19" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_artikel.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.22" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_data_anak.xml" value="0.25" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_data_orang_tua.xml" value="0.17074275362318841" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_edukasi.xml" value="0.22" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_edukasi_screen.xml" value="0.21" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_favorite.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_kelas.xml" value="0.18" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_konseling.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_login_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_panduan_orang_tua_screen.xml" value="0.2" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_profile_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_register_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_spalshscreen.xml" value="0.22" />
-        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.17074275362318841" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.25" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_update_profile.xml" value="0.209375" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_video_hari_ini.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/adapter_viewpager.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/aktivitas_hari_ini.xml" value="0.151268115942029" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/content_update_porfile_screen.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.33" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/fragment_first.xml" value="0.17074275362318841" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/fragment_second.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/permainan.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.158" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_notificaton.xml" value="0.158" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.158" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_artikel.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_data_anak.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_edukasi.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_favorite.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.30013927576601673" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.22" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konseling.xml" value="0.33" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_login_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_media_player.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_panduan_orang_tua_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_profile_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_register_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_update_profile.xml" value="0.67" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_video_hari_ini.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpager.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/notifikasi.xml" value="0.22447916666666667" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/permainan.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

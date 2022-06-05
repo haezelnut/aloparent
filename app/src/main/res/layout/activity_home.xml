@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Home">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -52,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
+                    android:textColor="#515151"
                     android:layout_toRightOf="@+id/foto_profil_orangtua"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Hello, Lesti!"
@@ -91,15 +93,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Pencapaian anak hari ini"
-                android:textSize="13dp"
-
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Pencapaian anak hari ini"
+                    android:textColor="#535351"
+                    android:textSize="13dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -573,6 +574,7 @@
                             android:layout_marginTop="25dp"
                             android:fontFamily="@font/poppins_semibold"
                             android:text="Aktivitas untuk dilakukan Putri hari ini"
+                            android:textColor="#535351"
                             android:textSize="13dp" />
 
                         <androidx.viewpager.widget.ViewPager
@@ -614,6 +616,7 @@
                             android:layout_marginHorizontal="30dp"
                             android:fontFamily="@font/poppins_semibold"
                             android:text="Video untuk Putri hari ini"
+                            android:textColor="#535351"
                             android:textSize="13dp" />
 
                         <TextView
@@ -677,11 +680,12 @@
                         android:layout_marginHorizontal="30dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="kategori favorit orang tua"
+                        android:textColor="#535351"
                         android:textSize="13dp"/>
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_marginTop="10dp">
 
                         <LinearLayout
@@ -689,7 +693,7 @@
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
 
-                            <Button
+                            <androidx.appcompat.widget.AppCompatButton
                                 android:layout_width="90dp"
                                 android:elevation="10dp"
                                 android:layout_height="match_parent"
@@ -702,7 +706,7 @@
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 
-                            <Button
+                            <androidx.appcompat.widget.AppCompatButton
                                 android:layout_width="90dp"
                                 android:elevation="10dp"
                                 android:layout_height="match_parent"
@@ -715,7 +719,7 @@
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 
-                            <Button
+                            <androidx.appcompat.widget.AppCompatButton
                                 android:layout_width="90dp"
                                 android:elevation="10dp"
                                 android:layout_height="match_parent"
@@ -728,7 +732,7 @@
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 
-                            <Button
+                            <androidx.appcompat.widget.AppCompatButton
                                 android:layout_width="90dp"
                                 android:elevation="10dp"
                                 android:layout_height="match_parent"
@@ -757,6 +761,7 @@
                             android:layout_marginHorizontal="30dp"
                             android:fontFamily="@font/poppins_semibold"
                             android:text="Artikel untuk hari ini"
+                            android:textColor="#535351"
                             android:textSize="13dp" />
 
                         <TextView
@@ -865,6 +870,7 @@
                             android:layout_marginHorizontal="30dp"
                             android:fontFamily="@font/poppins_semibold"
                             android:text="Permainan untuk buah hati"
+                            android:textColor="#535351"
                             android:textSize="13dp" />
 
                         <TextView
