@@ -10,7 +10,7 @@ public class KonselingKesehatanActivity extends AppCompatActivity {
 
     // kembali ke konseling
     public void backToKonseling(View v){
-        Intent intent = new Intent(KonselingKesehatanActivity.this, AhliKesehatan.class);
+        Intent intent = new Intent(KonselingKesehatanActivity.this, Konseling.class);
         startActivity(intent);
     }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".KonselingKesehatanActivity">
 
     <LinearLayout
@@ -18,9 +19,9 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:onClick="backToKonseling"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="backToKonseling"
             android:src="@drawable/back_btn"
 
             />
@@ -28,19 +29,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="22dp"
-            android:text="Kesehatan"
-            android:gravity="center"
-            android:textSize="20dp"
+            android:layout_centerInParent="true"
             android:fontFamily="@font/poppins_semibold"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Kesehatan"
             android:textColor="#515151"
-            />
+            android:textSize="20dp" />
 
     </RelativeLayout>
 
         <TextView
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="25dp"
             android:layout_width="wrap_content"
             android:layout_height="17dp"
             android:text="Ahli Kesehatan Favorit"
