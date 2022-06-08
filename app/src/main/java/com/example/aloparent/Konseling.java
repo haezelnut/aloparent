@@ -12,6 +12,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Konseling extends AppCompatActivity {
 
+    //ke scren konsling kseshatan
+    public void toKonselingKesehatan(View v){
+        Intent intent = new Intent(Konseling.this, KonselingKesehatanActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

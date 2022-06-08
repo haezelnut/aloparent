@@ -166,6 +166,7 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.imageview.ShapeableImageView
+                        android:onClick="toKonselingKesehatan"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="#6BBDED"

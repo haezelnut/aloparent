@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_lanjut">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_lanjut"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Lanjut"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_rectangle_orange"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>

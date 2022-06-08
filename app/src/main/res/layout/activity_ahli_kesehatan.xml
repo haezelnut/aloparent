@@ -9,20 +9,20 @@
     <RelativeLayout
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:orientation="vertical"
         >
 
         <RelativeLayout
             android:id="@+id/header_ahli_kesehatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
+                android:onClick="backToKesehatan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/back_btn"
-                />
+                android:src="@drawable/back_btn" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -176,7 +176,7 @@
                 android:backgroundTint="#FFBE3C"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
-                android:text="7 Tahun"
+                android:text="Rp. 55.000,-"
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -197,18 +197,19 @@
             />
 
         <Button
-            android:layout_marginTop="40dp"
-            android:layout_below="@id/keterangan_ahli"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnPiihJadwal"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_below="@id/keterangan_ahli"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/btn_rectangle_orange"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_bold"
             android:text="Pilih Jadwal"
             android:textAllCaps="false"
-            android:fontFamily="@font/poppins_bold"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:elevation="10dp"/>
+            android:textSize="15dp" />
 
     </RelativeLayout>
-
 </ScrollView>
