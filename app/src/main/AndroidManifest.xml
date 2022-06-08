@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".AhliKesehatan"
+            android:exported="false" />
+        <activity
+            android:name=".KonselingKesehatanActivity"
+            android:exported="false" />
+        <activity
             android:name=".PanduanOrangTuaScreen"
             android:exported="false" />
         <activity
