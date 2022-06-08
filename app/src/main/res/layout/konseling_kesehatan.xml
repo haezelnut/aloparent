@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonselingKesehatanActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Kesehatan"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#515151"
+            />
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="Ahli Kesehatan Favorit"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#515151"
+            android:textSize="15dp"
+            />
+        
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle_orange"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_profil_ahli_kesehatan1"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginVertical="23dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/foto_profil_lesti"
+                app:civ_circle_background_color="#75DB85" />
+
+            <LinearLayout
+                android:onClick="ahliKesehatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/foto_profil_ahli_kesehatan1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Veronika"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/btn_ractangle"
+                    android:backgroundTint="#6BBDED"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:text="Pengalaman 7 tahun"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="12.5dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+</ScrollView>

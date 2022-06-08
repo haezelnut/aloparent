@@ -56,7 +56,9 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.158" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/rectangle_notificaton.xml" value="0.158" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/vaertical_line.xml" value="0.129" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.158" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_ahli_kesehatan.xml" value="0.5" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_artikel.xml" value="0.22447916666666667" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.22447916666666667" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.22447916666666667" />
@@ -77,6 +79,7 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_video_hari_ini.xml" value="0.22447916666666667" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpager.xml" value="0.22447916666666667" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.22447916666666667" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/konseling_kesehatan.xml" value="0.2" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/notifikasi.xml" value="0.22447916666666667" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/permainan.xml" value="0.22447916666666667" />
       </map>
