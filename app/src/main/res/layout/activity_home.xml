@@ -173,7 +173,7 @@
                             android:textColor="@color/white"
                             android:textSize="16dp" />
 
-                        <Button
+                        <TextView
                             android:layout_above="@id/text_dukung_anak"
                             android:id="@+id/umur_anak"
                             android:layout_width="90dp"

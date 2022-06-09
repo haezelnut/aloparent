@@ -64,6 +64,7 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/permainan.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/button_border.xml" value="0.146" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/chip_text_color.xml" value="0.1955" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_next_btn_blue.xml" value="0.1765" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_nextbtn.xml" value="0.1765" />
@@ -79,8 +80,9 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_panduan_orang_tua_screen.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.3194444444444444" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/konfirmasi_jadwal_berhasil.xml" value="0.3578125" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/konseling_kesehatan.xml" value="0.3194444444444444" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.33" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.22" />
       </map>
     </option>
   </component>

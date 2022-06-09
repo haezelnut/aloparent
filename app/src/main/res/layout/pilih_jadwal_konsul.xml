@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-   android:gravity="center"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/btn_ractangle"
+        android:backgroundTint="@color/white">
 
     <ImageView
         android:layout_centerHorizontal="true"
@@ -28,7 +33,7 @@
 
    <GridLayout
        android:id="@+id/pilih_jadwal"
-        android:layout_above="@id/btn_lanjut"
+        android:layout_above="@id/btn_lanjut2"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +43,7 @@
            android:layout_width="20dp"
            android:layout_height="wrap_content"
            android:layout_columnWeight="1"
-           android:layout_above="@id/btn_lanjut"
+           android:layout_above="@id/btn_lanjut2"
            app:singleSelection="true">
 
            <com.google.android.material.chip.Chip
@@ -115,7 +120,7 @@
            android:layout_width="1dp"
            android:layout_height="wrap_content"
            android:layout_columnWeight="2"
-           android:layout_above="@id/btn_lanjut"
+           android:layout_above="@id/btn_lanjut2"
            app:singleSelection="true"
            android:paddingLeft="20dp">
 
@@ -186,20 +191,20 @@
 
    </GridLayout>
 
-    <Button
-        android:id="@+id/btn_lanjut"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_rectangle_orange"
-        android:backgroundTint="#FFBE3C"
-        android:elevation="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Lanjut"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="15dp" />
-
+        <Button
+            android:id="@+id/btn_lanjut2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_rectangle_orange"
+            android:backgroundTint="#FFBE3C"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Lanjut"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+</RelativeLayout>
 </RelativeLayout>

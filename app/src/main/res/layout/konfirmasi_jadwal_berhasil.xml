@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_konfirmasi_jadwal_konseling"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Jadwal Kamu telah\n dikonfirmasi"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16dp"
+        android:textColor="#515151"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran berhasil, yuk segera\n konsultasi masalah si kecil sebelum\n waktumu habis"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/btnKembaliKeKonseling"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_border"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kembali ke menu konseling"
+        android:textAllCaps="false"
+        android:textColor="#FFBE3C"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_rectangle_orange"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Chat"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+
+
+</LinearLayout>

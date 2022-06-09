@@ -37,9 +37,9 @@ public class AhliKesehatan extends AppCompatActivity {
             }
             private void pilihJadwal(){
                 dialog.setContentView(R.layout.pilih_jadwal_konsul);
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-                Button lanjut = dialog.findViewById(R.id.btn_lanjut);
+                Button lanjut = dialog.findViewById(R.id.btn_lanjut2);
 
                 lanjut.setOnClickListener(new View.OnClickListener() {
                     @Override
