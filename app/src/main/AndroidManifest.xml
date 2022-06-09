@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aloparent">
         <activity
+            android:name=".KonfirmasiJadwal"
+            android:exported="false" />
+        <activity
             android:name=".AhliKesehatan"
             android:exported="false" />
         <activity

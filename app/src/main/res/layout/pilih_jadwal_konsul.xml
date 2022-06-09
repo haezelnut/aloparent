@@ -1,31 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <com.google.android.material.chip.ChipGroup
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/header_text_jadwal_konsul"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/image_jadwal_konsul" />
+
+    <TextView
+        android:id="@+id/header_text_jadwal_konsul"
+        android:layout_above="@+id/pilih_jadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Pilih jadwal konsul"
+        android:textColor="#515151"
+        android:textSize="15dp"
+        android:layout_marginBottom="25dp"/>
+
+   <GridLayout
+       android:id="@+id/pilih_jadwal"
+        android:layout_above="@id/btn_lanjut"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/btn_lanjut">
+        android:columnCount="3" >
 
-    </com.google.android.material.chip.ChipGroup>
+       <com.google.android.material.chip.ChipGroup
+           android:layout_width="20dp"
+           android:layout_height="wrap_content"
+           android:layout_columnWeight="1"
+           android:layout_above="@id/btn_lanjut"
+           app:singleSelection="true">
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="SENIN"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="SELASA"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="RABU"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="KAMIS"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="JUMAT"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+
+
+
+
+       </com.google.android.material.chip.ChipGroup>
+
+       <com.google.android.material.chip.ChipGroup
+           android:layout_width="1dp"
+           android:layout_height="wrap_content"
+           android:layout_columnWeight="2"
+           android:layout_above="@id/btn_lanjut"
+           app:singleSelection="true"
+           android:paddingLeft="20dp">
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:text="09.00 AM - 10.00 AM"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="11.00 AM - 12.00 AM"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="13.00 AM - 14.00 AM"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="15.00 AM - 16.00 AM"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+
+           <com.google.android.material.chip.Chip
+               style="@style/costomcChipStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_semibold"
+               android:gravity="center"
+               android:text="17.00 AM - 18.00 AM"
+               android:textAlignment="center"
+               android:textSize="12dp"
+               app:chipIconEnabled="false"
+               app:chipStrokeColor="#6BBDED"
+               app:chipStrokeWidth="1dp" />
+       </com.google.android.material.chip.ChipGroup>
+
+   </GridLayout>
 
     <Button
-        android:layout_marginTop="30dp"
         android:id="@+id/btn_lanjut"
-        android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_rectangle_orange"
+        android:backgroundTint="#FFBE3C"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="Lanjut"
         android:textAllCaps="false"
-        android:background="@drawable/btn_rectangle_orange"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="44dp"
-        android:fontFamily="@font/poppins_bold"
         android:textColor="@color/white"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
 </RelativeLayout>
