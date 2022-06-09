@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".AhliKesehatan">
 
     <ScrollView
@@ -190,14 +191,13 @@
 
         <TextView
             android:id="@+id/keterangan_ahli"
-            android:layout_below="@id/constraintLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/constraintLayout1"
             android:fontFamily="@font/poppins_medium"
-            android:textSize="14dp"
-            android:textColor="#515151"
             android:text="Veronika merupakan dokter kesehatan anak, konsultan tumbuh kembang anak yang berpraktek di Eka Hospital BSD. Beliau menempuh pendidikan kedokteran dan pendidikan dokter spesialis anak di Universitas Indonesia. Beliau memiliki ketertarikan khusus pada bidang kesehatan untuk membantu anak tumbuh kembang dengan baik."
-            />
+            android:textColor="#515151"
+            android:textSize="14dp" />
 
         <Button
             android:id="@+id/btnPiihJadwal"

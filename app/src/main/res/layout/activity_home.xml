@@ -903,6 +903,8 @@
                         android:layout_marginHorizontal="30dp"
                         android:layout_marginTop="10dp"
                         android:columnCount="3"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
                         android:columnOrderPreserved="false"
                         android:rowCount="1">
 
@@ -910,6 +912,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_rowWeight="1"
+                            android:backgroundTint="@color/white"
                             android:layout_columnWeight="1">
 
                             <LinearLayout
@@ -948,6 +951,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_rowWeight="1"
+                            android:backgroundTint="@color/white"
                             android:layout_columnWeight="1">
 
                             <LinearLayout
@@ -986,6 +990,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_rowWeight="1"
+                            android:backgroundTint="@color/white"
                             android:layout_columnWeight="1">
 
                             <LinearLayout

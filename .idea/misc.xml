@@ -34,6 +34,7 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_play.xml" value="0.1" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.19" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_ahli_kesehatan.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_artikel.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_berhasil_daftar.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_berhasil_login.xml" value="0.22" />
@@ -60,8 +61,10 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.33" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/fragment_first.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/fragment_second.xml" value="0.17074275362318841" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/konseling_kesehatan.xml" value="0.209375" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/notifikasi.xml" value="0.151268115942029" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/permainan.xml" value="0.151268115942029" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/button_border.xml" value="0.146" />
