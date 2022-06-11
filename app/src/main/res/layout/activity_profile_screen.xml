@@ -40,7 +40,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="@null"
+            android:onClick="btnEdit"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_TakePhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -133,45 +145,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnUbahData"
-            android:onClick="btnUbahData"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Ubah Data"
-            android:textAllCaps="false"
-            android:textColor="#FFBE3C"
-            android:fontFamily="@font/poppins_bold"
-            android:textSize="15dp"
-            android:layout_marginTop="70dp"
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/btn_ubahdata"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Kata Sandi"
+            android:textColor="#515151"
+            android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin" />
 
+        <TextView
+            android:id="@+id/kataSandi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rectangle_edittext"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Password"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_arrow_pw"
+            android:textColor="#515151"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+
         <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSimpanData"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/btn_rectangle_orange"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Simpan Data"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUbahData"
-        app:layout_constraintVertical_bias="0.854" />
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_ubahdata"
+            android:fontFamily="@font/poppins_bold"
+            android:onClick="btnLogout"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#FFBE3C"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSimpanData" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSimpanData"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_rectangle_orange"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Simpan Data"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kataSandi" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

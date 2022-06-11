@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".UpdateProfile">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="30dp">
-
+    tools:context=".UbahKataSandi">
 
     <ImageButton
-        android:id="@+id/backFormUbahData"
-        android:onClick="backFormUbahData"
+        android:id="@+id/backFormProfile"
+        android:onClick="backFormProfile"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:background="@null"
@@ -30,154 +24,137 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Ubah Data Orang Tua"
+        android:text="Ubah Kata Sandi"
         android:fontFamily="@font/poppins_semibold"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.356"
-        app:layout_constraintStart_toEndOf="@+id/backFormUbahData"
+        app:layout_constraintStart_toEndOf="@+id/backFormProfile"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_TakePhoto"
+    <TextView
+        android:id="@+id/txtKataSandi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="92dp"
-        android:background="@drawable/ic_picture"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Kata sandi saat ini"
+        android:textColor="#515151"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <ImageView
-        android:id="@+id/profile_picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/image_profile"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <TextView
-        android:id="@+id/txtNamaOrangTua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Nama Orang Tua"
-        android:textColor="#515151"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
-
     <EditText
-        android:id="@+id/inputNamaOrangTua"
+        android:id="@+id/inputPasswordDaftar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rectangle_edittext"
+        android:drawableRight="@drawable/ic_visibility_off"
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
-        android:hint="Masukkan nama orang tua"
+        android:hint="Masukkan kata sandi saat ini"
         android:textColorHint="#80515151"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textColor="@color/black"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNamaOrangTua" />
+        app:layout_constraintTop_toBottomOf="@+id/txtKataSandi" />
 
     <TextView
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtKonfirmasiKataSandi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Email"
+        android:text="Kata sandi baru"
         android:textColor="#515151"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNamaOrangTua" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordDaftar" />
 
     <EditText
-        android:id="@+id/inputEmailLogin"
+        android:id="@+id/inputKonfirmasiPasswordDaftar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rectangle_edittext"
+        android:drawableRight="@drawable/ic_visibility_off"
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
-        android:hint="Masukkan alamat email"
+        android:hint="Masukkan kata sandi baru"
         android:textColorHint="#80515151"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textColor="@color/black"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtKonfirmasiKataSandi" />
 
     <TextView
-        android:id="@+id/txtPassword"
+        android:id="@+id/txtKonfirmasiKataSandiBaru"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Kata Sandi"
+        android:text="Konfirmasi Kata sandi baru"
         android:textColor="#515151"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/inputKonfirmasiPasswordDaftar" />
 
     <EditText
-        android:id="@+id/kataSandi"
+        android:id="@+id/inputKonfirmasiPasswordBaru"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center_vertical"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rectangle_edittext"
+        android:drawableRight="@drawable/ic_visibility_off"
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
-        android:hint="Masukkan Kata Sandi"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
+        android:hint="Konfirmasi ulang kata sandi"
         android:textColorHint="#80515151"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textColor="@color/black"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtKonfirmasiKataSandiBaru" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSimpanData"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/btn_rectangle_orange"
         android:fontFamily="@font/poppins_bold"
         android:onClick="btnSimpanData"
@@ -189,6 +166,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kataSandi" />
+        app:layout_constraintTop_toBottomOf="@+id/inputKonfirmasiPasswordBaru" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>

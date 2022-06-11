@@ -15,6 +15,11 @@ public class LoginScreen extends AppCompatActivity {
     EditText inputEmail,inputPassword;
     boolean passwordVisible;
 
+    public void forgetPass(View v){
+        Intent intent = new Intent(LoginScreen.this, LupaPassword.class);
+        startActivity(intent);
+    }
+
     public void toRegister(View v){
         Intent intent = new Intent(LoginScreen.this, RegisterScreen.class);
         startActivity(intent);

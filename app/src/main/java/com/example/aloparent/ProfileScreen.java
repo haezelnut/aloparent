@@ -15,8 +15,13 @@ public class ProfileScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void btnUbahData(View v){
+    public void btnEdit(View v){
         Intent intent = new Intent(ProfileScreen.this, UpdateProfile.class);
+        startActivity(intent);
+    }
+
+    public void btnLogout(View v){
+        Intent intent = new Intent(ProfileScreen.this, LoginScreen.class);
         startActivity(intent);
     }
 
