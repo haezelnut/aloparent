@@ -23,7 +23,7 @@ public class Edukasi extends AppCompatActivity {
         setContentView(R.layout.activity_edukasi);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.kelas);
+        bottomNavigationView.setSelectedItemId(R.id.edukasi);
 
         ViewPager viewPager;
         ArrayList<Integer> images = new ArrayList<>();
