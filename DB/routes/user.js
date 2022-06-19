@@ -14,4 +14,8 @@ router.delete('/:id', userFunction.deleteUser);
 
 router.post('/login', userFunction.login);
 
+router.post('/check', userFunction.checkEmail);
+
+router.post('/reset', userFunction.updatePassword);
+
 module.exports = router;

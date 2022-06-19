@@ -89,6 +89,9 @@
             android:name=".OnBoardingScreen"
             android:exported="false" />
         <activity
+            android:name=".UpdateKataSandi"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>

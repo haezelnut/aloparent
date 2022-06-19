@@ -45,6 +45,44 @@ exports.addUser = async (req, res) => {
   }
 };
 
+//Reset password
+exports.checkEmail = async (req, res) => {
+  const { username, email } = req.body;
+
+  try {
+    const [checkUserEmail] = await connection.promise().query(`
+    SELECT * FROM user WHERE email = '${email}'
+    `);
+    if (checkUserEmail.length === 0) return res.status(400).json({ message: 'EMAIL FALSE' });
+	
+
+    const [checkUsername] = await connection.promise().query(`
+    SELECT * FROM user WHERE username = '${username}'
+    `);
+    if (checkUsername.length === 0) return res.status(400).json({ message: 'USERNAME FALSE' });
+
+    return res.status(200).json({ message: 'TRUE' });
+  } catch (e) {
+    return res.status(400).send(e);
+  }
+};
+
+exports.updatePassword = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    userID = await connection.promise().query(`
+    UPDATE user
+    SET password='${password}'
+    WHERE email='${email}'
+    `);
+	
+	return res.status(200).json({ message: 'TRUE' });
+  } catch (e) {
+    return res.status(400).send(e);
+  }
+};
+
 //Function Update User [with PUT]
 exports.replaceData = async (req, res) => {
   const id = req.params.id;

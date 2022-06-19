@@ -134,7 +134,6 @@ public class RegisterScreen extends AppCompatActivity {
             object.put("username", temp_username);
             object.put("email", temp_email);
             object.put("password", temp_Password);
-            final String requestBody = object.toString();
 
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
                 @Override
@@ -154,7 +153,6 @@ public class RegisterScreen extends AppCompatActivity {
                             startActivity(intent);
                         }
                     } catch (JSONException e) {
-                        System.out.println("Disni");
                         e.printStackTrace();
                     }
                 }
