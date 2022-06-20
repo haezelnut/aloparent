@@ -9,7 +9,6 @@
 
     <ImageButton
         android:id="@+id/backFormProfile"
-        android:onClick="backFormProfile"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:background="@null"
@@ -157,7 +156,6 @@
         android:layout_marginBottom="30dp"
         android:background="@drawable/btn_rectangle_orange"
         android:fontFamily="@font/poppins_bold"
-        android:onClick="btnSimpanData"
         android:text="Simpan Data"
         android:textAllCaps="false"
         android:textColor="@color/white"

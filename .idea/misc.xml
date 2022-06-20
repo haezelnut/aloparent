@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_kelas.xml" value="0.1" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_konfirmasi_jadwal.xml" value="0.1" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_login_screen.xml" value="0.33" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_lupa_kata_sandi.xml" value="0.22" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_lupa_password.xml" value="0.25" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_lupa_password_next.xml" value="0.25" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.1" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_register_screen.xml" value="0.2" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_ubah_kata_sandi.xml" value="0.25" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_update_profile.xml" value="0.22" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/permainan.xml" value="0.1" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_lock.xml" value="0.1045" />

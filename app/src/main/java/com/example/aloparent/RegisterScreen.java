@@ -6,13 +6,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Random;
 
 public class RegisterScreen extends AppCompatActivity {
 
-    EditText inputPassword, inputConfirm;
+    EditText inputPassword, inputConfirm, inputNamaOrangTua, inputEmailLogin;
     boolean passwordVisible;
 
     public void toLogin(View v){
@@ -21,8 +36,22 @@ public class RegisterScreen extends AppCompatActivity {
     }
 
     public void btnDaftar(View v){
-        Intent intent = new Intent(RegisterScreen.this, BerhasilDaftar.class);
-        startActivity(intent);
+        String tempNamaOrangTua = inputNamaOrangTua.getText().toString(), tempEmail = inputEmailLogin.getText().toString(), tempPassword = inputPassword.getText().toString(), tempConfirm= inputConfirm.getText().toString();
+        if(tempNamaOrangTua.isEmpty()){
+            inputNamaOrangTua.setError("Kolom Orang Tua Kosong !!!");
+            Toast.makeText(this, "Mohon Isi Semua Kolom !!!", Toast.LENGTH_SHORT).show();
+        }else if(tempEmail.isEmpty()){
+            inputEmailLogin.setError("Kolom Email Kosong !!!");
+            Toast.makeText(this, "Mohon Isi Semua Kolom !!!", Toast.LENGTH_SHORT).show();
+        }else if(tempPassword.isEmpty()){
+            inputPassword.setError("Kolom Password Kosong !!!");
+            Toast.makeText(this, "Mohon Isi Semua Kolom !!!", Toast.LENGTH_SHORT).show();
+        }else if (tempConfirm.isEmpty()){
+            inputConfirm.setError("Kolom Confirm Password Kosong !!!");
+            Toast.makeText(this, "Mohon Isi Semua Kolom !!!", Toast.LENGTH_SHORT).show();
+        }else{
+            postData(randID(), inputNamaOrangTua.getText().toString(), inputEmailLogin.getText().toString(), inputPassword.getText().toString());
+        }
     }
 
 
@@ -32,6 +61,8 @@ public class RegisterScreen extends AppCompatActivity {
         setContentView(R.layout.activity_register_screen);
 
         inputPassword = findViewById(R.id.inputPasswordDaftar);
+        inputNamaOrangTua = findViewById(R.id.inputNamaOrangTua);
+        inputEmailLogin = findViewById(R.id.inputEmailLogin);
         inputConfirm = findViewById(R.id.inputKonfirmasiPasswordDaftar);
 
         // hide dan show icon on inputtext password
@@ -85,5 +116,66 @@ public class RegisterScreen extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private int randID() {
+        Random rand = new Random();
+        int upperBound = 1000000000;
+        int int_random = rand.nextInt(upperBound);
+        return int_random;
+    }
+
+    private void postData(Integer id_user, String temp_username, String temp_email, String temp_Password) {
+        JSONObject object = new JSONObject();
+        try {
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            String URL = "http://192.168.43.247:3000/users";
+            object.put("id_user", id_user);
+            object.put("username", temp_username);
+            object.put("email", temp_email);
+            object.put("password", temp_Password);
+
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        String res = response.getString("message");
+                        System.out.println(res);
+
+                        if (res.equals("SUCCESS")) {
+                            Log.e("Response : ", response.toString());
+                            Toast.makeText(RegisterScreen.this, "Data Uploaded", Toast.LENGTH_SHORT).show();
+                            inputNamaOrangTua.setText("");
+                            inputEmailLogin.setText("");
+                            inputPassword.setText("");
+                            inputConfirm.setText("");
+                            Intent intent = new Intent(RegisterScreen.this, BerhasilDaftar.class);
+                            startActivity(intent);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    String responseBody = null;
+                    responseBody = new String(error.networkResponse.data, StandardCharsets.UTF_8);
+                    try {
+                        JSONObject data = new JSONObject(responseBody);
+                        String errorLog = data.getString("message");
+                        if (errorLog.equals("EXIST")) {
+                            Toast.makeText(RegisterScreen.this, "E-Mail Telah Terdaftar !!!", Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            });
+            requestQueue.add(jsonObjectRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }
