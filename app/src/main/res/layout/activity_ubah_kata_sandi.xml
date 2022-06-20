@@ -32,50 +32,14 @@
         app:layout_constraintStart_toEndOf="@+id/backFormProfile"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtKataSandi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Kata sandi saat ini"
-        android:textColor="#515151"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <EditText
-        android:id="@+id/inputPasswordDaftar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/rectangle_edittext"
-        android:drawableRight="@drawable/ic_visibility_off"
-        android:elevation="10dp"
-        android:ems="10"
-        android:fontFamily="@font/poppins_semibold"
-        android:hint="Masukkan kata sandi saat ini"
-        android:textColorHint="#80515151"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:textColor="@color/black"
-        android:textSize="13dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtKataSandi" />
 
     <TextView
         android:id="@+id/txtKonfirmasiKataSandi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Kata sandi baru"
         android:textColor="#515151"
@@ -83,9 +47,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPasswordDaftar" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputKonfirmasiPasswordDaftar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -93,7 +57,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rectangle_edittext"
-        android:drawableRight="@drawable/ic_visibility_off"
+        app:passwordToggleTint="#FF6BBDED"
+        app:passwordToggleEnabled="true"
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
@@ -101,7 +66,6 @@
         android:textColorHint="#80515151"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:textColor="@color/black"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +87,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputKonfirmasiPasswordDaftar" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputKonfirmasiPasswordBaru"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -131,7 +95,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rectangle_edittext"
-        android:drawableRight="@drawable/ic_visibility_off"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#FF6BBDED"
         android:elevation="10dp"
         android:ems="10"
         android:fontFamily="@font/poppins_semibold"
@@ -139,7 +104,6 @@
         android:textColorHint="#80515151"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:textColor="@color/black"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
