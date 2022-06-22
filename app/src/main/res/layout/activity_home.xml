@@ -124,7 +124,7 @@
                     <LinearLayout
                         android:id="@+id/tambahDataAnak"
                         android:onClick="inputDataAnak"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
@@ -149,7 +149,6 @@
                             android:text="Tambah data anak"
                             android:textColor="@color/white"
                             android:textSize="13dp"
-
                             />
 
                     </LinearLayout>
@@ -157,19 +156,18 @@
                     <RelativeLayout
                         android:layout_marginTop="10dp"
                         android:id="@+id/data_anak"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
                         <SeekBar
-                           android:layout_width="match_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_above="@id/nama_anak"
                             android:layout_marginHorizontal="15dp"
-                            android:progressDrawable="@drawable/seek_bar"
-                            android:thumb="@drawable/icon_progress_bar_boy"
                             android:minWidth="5dp"
-                            />
+                            android:progressDrawable="@drawable/seek_bar"
+                            android:thumb="@drawable/icon_progress_bar_boy" />
 
                         <TextView
                             android:id="@+id/nama_anak"

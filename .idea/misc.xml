@@ -79,6 +79,8 @@
         <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_ractangle.xml" value="0.153" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/button_border.xml" value="0.146" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/chip_text_color.xml" value="0.1955" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/costum_progress_bg.xml" value="0.1825" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/costum_progress_bg_pembelajaran.xml" value="0.1825" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_selected.xml" value="0.19" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_selected_image_slider.xml" value="0.19" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_unselected.xml" value="0.19" />
@@ -94,7 +96,7 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_edukasi.xml" value="0.3003708281829419" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_favorite.xml" value="0.21944444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.3194444444444444" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.22" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konfirmasi_jadwal.xml" value="0.33" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konseling.xml" value="0.2074074074074074" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_login_screen.xml" value="0.3194444444444444" />
