@@ -3,9 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_lupa_password_next.xml" value="0.11911231884057971" />
-        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_profile_screen.xml" value="0.25" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_lock.xml" value="0.1045" />
@@ -51,6 +48,7 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_kelas.xml" value="0.18" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_konseling.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_login_screen.xml" value="0.25" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_lupa_kata_sandi.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_lupa_password.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_lupa_password_next.xml" value="0.22" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.17074275362318841" />
@@ -76,43 +74,27 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.17074275362318841" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/slide_screen.xml" value="0.25" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/btn_ractangle.xml" value="0.153" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/button_border.xml" value="0.146" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/chip_text_color.xml" value="0.1955" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/costum_progress_bg.xml" value="0.1825" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/costum_progress_bg_pembelajaran.xml" value="0.1825" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_selected.xml" value="0.19" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_selected_image_slider.xml" value="0.19" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_unselected.xml" value="0.19" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/dot_unselected_image_slider.xml" value="0.19" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_next_btn_blue.xml" value="0.1765" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_nextbtn.xml" value="0.1765" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_play.xml" value="0.1415" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_visibility.xml" value="0.164" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_visibility_off.xml" value="0.179" />
-        <entry key="..\:/alo_parent/app/src/main/res/drawable/seek_bar.xml" value="0.33" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_ahli_kesehatan.xml" value="0.25" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_data_anak.xml" value="0.3194444444444444" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_edukasi.xml" value="0.3003708281829419" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_favorite.xml" value="0.21944444444444444" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.22" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_home.xml" value="0.3194444444444444" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_kelas.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konfirmasi_jadwal.xml" value="0.33" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_konseling.xml" value="0.2074074074074074" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_login_screen.xml" value="0.3194444444444444" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_lupa_password.xml" value="0.3578125" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_lupa_password_next.xml" value="0.3578125" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_media_player.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_panduan_orang_tua_screen.xml" value="0.3194444444444444" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_ubah_kata_sandi.xml" value="0.33" />
+        <entry key="..\:/alo_parent/app/src/main/res/layout/activity_ubah_kata_sandi.xml" value="0.25" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.3194444444444444" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/adapter_viewpager.xml" value="0.18177083333333333" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/data_berhasil_disimpan.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/konfirmasi_jadwal_berhasil.xml" value="0.3578125" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/konseling_kesehatan.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.22" />
-        <entry key="..\:/alo_parent/app/src/main/res/layout/slide_screen.xml" value="0.18177083333333333" />
       </map>
     </option>
   </component>

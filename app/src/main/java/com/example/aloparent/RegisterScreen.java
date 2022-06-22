@@ -60,9 +60,9 @@ public class RegisterScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_screen);
 
-        inputPassword = findViewById(R.id.inputPasswordDaftar);
         inputNamaOrangTua = findViewById(R.id.inputNamaOrangTua);
         inputEmailLogin = findViewById(R.id.inputEmailLogin);
+        inputPassword = findViewById(R.id.inputPasswordDaftar);
         inputConfirm = findViewById(R.id.inputKonfirmasiPasswordDaftar);
 
         // hide dan show icon on inputtext password
