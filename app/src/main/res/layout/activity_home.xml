@@ -53,10 +53,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
-                    android:textColor="#515151"
                     android:layout_toRightOf="@+id/foto_profil_orangtua"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Hello, Lesti!"
+                    android:textColor="#515151"
                     android:textSize="20dp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout

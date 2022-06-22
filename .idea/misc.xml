@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_lupa_password_next.xml" value="0.11911231884057971" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_profile_screen.xml" value="0.25" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_lock.xml" value="0.1045" />

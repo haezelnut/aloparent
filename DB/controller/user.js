@@ -2,6 +2,24 @@ const Validator = require('fastest-validator');
 const { user } = require('../models');
 const mysql = require('mysql2');
 const valid = new Validator();
+const path = require('path');
+const multer = require('multer');
+const user_storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, './images/image_user');
+  },
+  filename: (req, file, cb) => {
+    console.log(file);
+    cb(null, new Date().toISOString().replace(/[\/\\:]/g, '_') + file.originalname);
+  },
+});
+
+const uploadUserIMG = multer({
+  storage: user_storage,
+  limit: {
+    fileSize: 1000000, // 1000000 Bytes = 1 MB
+  },
+}).single('user_Image');
 
 let userID;
 var connection = mysql.createConnection({
@@ -10,6 +28,17 @@ var connection = mysql.createConnection({
   password: '',
   database: 'aloparent_db',
 });
+
+//Function Upload Image Users
+exports.uploadUserImage = async (req, res) => {
+  uploadUserIMG(req, res, (err) => {
+    if (err) {
+      console.log(err);
+      res.status(400).send('Something went wrong!');
+    }
+    res.send(req.file);
+  });
+};
 
 //Function Tambah User
 exports.addUser = async (req, res) => {
@@ -54,7 +83,6 @@ exports.checkEmail = async (req, res) => {
     SELECT * FROM user WHERE email = '${email}'
     `);
     if (checkUserEmail.length === 0) return res.status(400).json({ message: 'EMAIL FALSE' });
-	
 
     const [checkUsername] = await connection.promise().query(`
     SELECT * FROM user WHERE username = '${username}'
@@ -76,8 +104,8 @@ exports.updatePassword = async (req, res) => {
     SET password='${password}'
     WHERE email='${email}'
     `);
-	
-	return res.status(200).json({ message: 'TRUE' });
+
+    return res.status(200).json({ message: 'TRUE' });
   } catch (e) {
     return res.status(400).send(e);
   }

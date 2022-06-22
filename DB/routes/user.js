@@ -18,4 +18,6 @@ router.post('/check', userFunction.checkEmail);
 
 router.post('/reset', userFunction.updatePassword);
 
+router.post('/userImage', userFunction.uploadUserImage);
+
 module.exports = router;
