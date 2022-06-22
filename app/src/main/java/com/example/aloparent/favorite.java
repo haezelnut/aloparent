@@ -7,7 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class favorite extends AppCompatActivity {
 
@@ -16,27 +20,35 @@ public class favorite extends AppCompatActivity {
         startActivity(intent);
     }
 
-    ViewPager viewPager;
-    ArrayList<Integer> images = new ArrayList<>();
-    ViewPagerAdapter adapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite);
 
-        viewPager = findViewById(R.id.view_pager1);
+        // image slider video kesehatan
 
-        images.add(R.drawable.contoh_gambar_video1);
-        images.add(R.drawable.contoh_gambar_video2);
+        ImageSlider imageSlider = findViewById(R.id.view_pager_video_kesehatan);
 
-        adapter = new ViewPagerAdapter(this,images);
-        viewPager.setPadding(100,0,100,0);
+        List<SlideModel> slideModels = new ArrayList<>();
 
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Praktek langsung mengenal kesehatan pada anak 3 Tahun"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"Praktek langsung mengenal kesehatan pada anak 3 Tahun"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Praktek langsung mengenal kesehatan pada anak 3 Tahun"));
 
+        imageSlider.setImageList(slideModels,true);
 
-        viewPager.setAdapter(adapter);
+        // image slider artikel kesehatan
+
+        ImageSlider imageSlider2 = findViewById(R.id.view_pager_artikel_kesehatan);
+
+        List<SlideModel> slideModels2 = new ArrayList<>();
+
+        slideModels2.add(new SlideModel(R.drawable.contoh_gambar_video1,"Praktek langsung mengenal kesehatan pada anak 3 Tahun"));
+        slideModels2.add(new SlideModel(R.drawable.contoh_gambar_video2,"Praktek langsung mengenal kesehatan pada anak 3 Tahun"));
+        slideModels2.add(new SlideModel(R.drawable.contoh_gambar_video1,"Praktek langsung mengenal kesehatan pada anak 3 Tahun"));
+
+        imageSlider2.setImageList(slideModels,true);
 
 
     }

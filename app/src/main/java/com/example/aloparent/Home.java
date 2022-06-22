@@ -9,14 +9,18 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Home extends AppCompatActivity {
 
@@ -25,9 +29,6 @@ public class Home extends AppCompatActivity {
     public static LinearLayout layout2;
     public static RelativeLayout dataAnak;
 
-    ViewPager viewPager;
-    ArrayList<Integer> images = new ArrayList<>();
-    ViewPagerAdapter adapter;
 
     //inetnt ke profil orang tua
     public void ToProfile(View v){
@@ -95,16 +96,16 @@ public class Home extends AppCompatActivity {
         dataAnak = (RelativeLayout) findViewById(R.id.data_anak);
         layout2 = (LinearLayout) findViewById(R.id.linierlayout2);
 
+        ImageSlider imageSlider = findViewById(R.id.view_pager1);
 
-        viewPager = findViewById(R.id.view_pager1);
+        List<SlideModel> slideModels = new ArrayList<>();
 
-        images.add(R.drawable.contoh_gambar_video1);
-        images.add(R.drawable.contoh_gambar_video2);
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
 
-        adapter = new ViewPagerAdapter(this,images);
-        viewPager.setPadding(0,0,0,0);
+        imageSlider.setImageList(slideModels,true);
 
-        viewPager.setAdapter(adapter);
 
        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

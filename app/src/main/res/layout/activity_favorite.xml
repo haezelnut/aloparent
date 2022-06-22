@@ -50,37 +50,29 @@
             <TextView
                 android:id="@+id/header_video_information"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginStart="29dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Video Mengenai Kesehatan"
                 android:textSize="15dp" />
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/view_pager1"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
+            <androidx.cardview.widget.CardView
                 android:layout_below="@id/header_video_information"
-                android:clipToPadding="false"
-                android:overScrollMode="never" />
-
-            <com.rd.PageIndicatorView
-                android:id="@+id/indicatorview1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/view_pager1"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="20dp"
-                app:piv_animationType="scale"
-                app:piv_dynamicCount="true"
-                app:piv_interactiveAnimation="true"
-                app:piv_selectedColor="#51A3D1"
-                app:piv_viewPager="@id/view_pager1" />
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/view_pager_video_kesehatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:elevation="10dp"
+                    android:textAlignment="textStart"
+                    android:textDirection="ltr"
+                    />
+            </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 
@@ -92,36 +84,30 @@
             <TextView
                 android:id="@+id/header_image_information"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:text="Artikel Mengenai Kesehatan"
                 android:textSize="15dp"
                 android:layout_marginStart="29dp"
                 android:fontFamily="@font/poppins_semibold"/>
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/view_pager2"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
+            <androidx.cardview.widget.CardView
                 android:layout_below="@id/header_image_information"
-                android:clipToPadding="false"
-                android:overScrollMode="never" />
-
-            <com.rd.PageIndicatorView
-                android:id="@+id/indicatorview2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/view_pager2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="20dp"
-                app:piv_animationType="scale"
-                app:piv_dynamicCount="true"
-                app:piv_interactiveAnimation="true"
-                app:piv_selectedColor="#51A3D1"
-                app:piv_viewPager="@id/view_pager1" />
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/view_pager_artikel_kesehatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:elevation="10dp"
+                    android:textAlignment="textStart"
+                    android:textDirection="ltr"
+                    />
+            </androidx.cardview.widget.CardView>
+
 
         </RelativeLayout>
 

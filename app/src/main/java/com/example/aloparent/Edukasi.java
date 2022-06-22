@@ -8,9 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.jar.Pack200;
 
 public class Edukasi extends AppCompatActivity {
@@ -25,19 +28,16 @@ public class Edukasi extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.edukasi);
 
-        ViewPager viewPager;
-        ArrayList<Integer> images = new ArrayList<>();
-        ViewPagerAdapter adapter2;
 
-        viewPager = findViewById(R.id.view_pager1);
+        ImageSlider imageSlider = findViewById(R.id.view_pager_edukasi);
 
-        images.add(R.drawable.contoh_gambar_video1);
-        images.add(R.drawable.contoh_gambar_video2);
+        List<SlideModel> slideModels = new ArrayList<>();
 
-        adapter2 = new ViewPagerAdapter(this,images);
-        viewPager.setPadding(0,0,0,0);
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agar di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"A di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
 
-        viewPager.setAdapter(adapter2);
+        imageSlider.setImageList(slideModels,true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
