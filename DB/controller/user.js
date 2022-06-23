@@ -2,24 +2,8 @@ const Validator = require('fastest-validator');
 const { user } = require('../models');
 const mysql = require('mysql2');
 const valid = new Validator();
-const path = require('path');
-const multer = require('multer');
-const user_storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, './images/image_user');
-  },
-  filename: (req, file, cb) => {
-    console.log(file);
-    cb(null, new Date().toISOString().replace(/[\/\\:]/g, '_') + file.originalname);
-  },
-});
 
-const uploadUserIMG = multer({
-  storage: user_storage,
-  limit: {
-    fileSize: 1000000, // 1000000 Bytes = 1 MB
-  },
-}).single('user_Image');
+//User Profile Images
 
 let userID;
 var connection = mysql.createConnection({
@@ -79,7 +63,7 @@ exports.checkEmail = async (req, res) => {
   const { username, email } = req.body;
 
   try {
-    const [checkUserEmail] = await connection.promise().query(`
+    const [checkUserEmail] = await connection.promise().query(` 
     SELECT * FROM user WHERE email = '${email}'
     `);
     if (checkUserEmail.length === 0) return res.status(400).json({ message: 'EMAIL FALSE' });
@@ -113,26 +97,20 @@ exports.updatePassword = async (req, res) => {
 
 //Function Update User [with PUT]
 exports.replaceData = async (req, res) => {
-  const id = req.params.id;
-  userID = await user.findByPk(id);
+  console.log(req.body);
+  console.log(req.file.filename);
+  var imgsrc = 'http://127.0.0.1:3000/images/image_user/' + req.file.fieldname;
+  const { username, email, password } = req.body;
+  const [checkUserEmail] = await connection.promise().query(` 
+    SELECT * FROM user WHERE email = '${email}'
+    `);
 
-  if (!userID) {
-    return res.json({ message: 'User Not Found!' });
-  }
+  userID = await connection.promise().query(`
+    UPDATE user
+    SET username='${username}', email='${email}',password='${password}', user_Image='${req.file.filename}'
+    WHERE email='${email}'
+    `);
 
-  const schema = {
-    username: 'string|optional',
-    email: 'string|optional',
-    password: 'string|optional',
-  };
-
-  const validate = valid.validate(req.body, schema);
-
-  if (validate.length) {
-    return res.status(400).json(validate);
-  }
-
-  userID = await userID.update(req.body);
   res.json(userID);
 };
 
