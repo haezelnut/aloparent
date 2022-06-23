@@ -1,10 +1,11 @@
 var express = require('express');
+var multer = require('../controller/multer');
 var router = express.Router();
 const userFunction = require('../controller/user');
 
 router.post('/', userFunction.addUser);
 
-router.put('/:id', userFunction.replaceData);
+router.put('/updateProfile', multer, userFunction.replaceData);
 
 router.get('/', userFunction.showUser);
 

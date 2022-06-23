@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Kelas">
+    tools:context=".View.Kelas">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:visibility="invisible"

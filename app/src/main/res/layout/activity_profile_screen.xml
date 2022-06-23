@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ProfileScreen">
+    tools:context=".View.ProfileScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,20 +25,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Data Orang Tua"
-        android:fontFamily="@font/poppins_semibold"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
-        app:layout_constraintStart_toEndOf="@+id/backFormProfile"
-        app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.406"
+            app:layout_constraintStart_toEndOf="@+id/backFormProfile"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/btnEdit"
@@ -80,7 +80,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Nama Orang Tua"
+        android:text="Username"
         android:textColor="#515151"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +175,6 @@
             android:text="Password"
             android:inputType="textEmailAddress"
             android:paddingLeft="10dp"
-            android:drawableRight="@drawable/ic_arrow_pw"
             android:textColor="#515151"
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -187,8 +186,8 @@
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="60dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/btn_ubahdata"
@@ -201,26 +200,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSimpanData" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSimpanData"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/btn_rectangle_orange"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Simpan Data"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/kataSandi" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
