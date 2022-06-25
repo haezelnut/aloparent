@@ -21,6 +21,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.aloparent.R;
+import com.example.aloparent.SharedPrefManager;
+import com.example.aloparent.UserModel;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,6 +32,7 @@ public class LoginScreen extends AppCompatActivity {
     private EditText inputEmail,inputPassword;
     private boolean passwordVisible;
     private ProgressBar progressBar;
+
 
     public void forgetPass(View v){
         Intent intent = new Intent(LoginScreen.this, LupaPassword.class);
@@ -51,6 +54,7 @@ public class LoginScreen extends AppCompatActivity {
         }else{
             sendData(temp_email, temp_password);
         }
+        // menyimpan data
     }
 
     @Override
@@ -87,6 +91,15 @@ public class LoginScreen extends AppCompatActivity {
                 return false;
             }
         });
+        final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
+        Boolean isLoggedIn = prefManager.IsUserLoggedIn();
+
+        // jika sudah login dan disaat aplikasi ditutup maka masuk ke screen home
+        if (isLoggedIn){
+            startActivity(new Intent(getApplicationContext(),Home.class));
+        }
+
+
     }
 
     private void sendData(String temp_Email, String temp_password) {
@@ -98,6 +111,10 @@ public class LoginScreen extends AppCompatActivity {
             public void onResponse(String response) {
                 Log.d("",response);
                 if(response.equals("TRUE")){
+                    // menyimpan data user menggunakan shared refrence
+                    final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
+                    UserModel user = new UserModel(temp_Email,temp_Email);
+                    prefManager.setUserLogin(user, true);
                     //Starting Home activity
                     Intent intent = new Intent(LoginScreen.this, BerhasilLogin.class);
                     startActivity(intent);

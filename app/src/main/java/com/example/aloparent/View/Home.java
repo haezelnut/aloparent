@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.aloparent.R;
+import com.example.aloparent.SharedPrefManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -127,5 +128,18 @@ public class Home extends AppCompatActivity {
                 return false;
             }
         });
+
+
+        // jika belum ada yang login maka akan kembali ke scren login
+       final SharedPrefManager prefManager = new SharedPrefManager(this);
+       if (!prefManager.IsUserLoggedIn()){
+           backToLogin();
+       }
+
+
+    }
+    private void backToLogin(){
+        startActivity(new Intent(getApplicationContext(), LoginScreen.class));
+        finish();
     }
 }
