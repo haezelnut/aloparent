@@ -11,7 +11,6 @@ import com.example.aloparent.SharedPrefManager;
 
 public class ProfileScreen extends AppCompatActivity {
 
-    final SharedPrefManager prefManager = new SharedPrefManager(this);
 
     public void backFormProfile(View v){
         Intent intent = new Intent(ProfileScreen.this, Home.class);
@@ -25,6 +24,7 @@ public class ProfileScreen extends AppCompatActivity {
 
     public void btnLogout(View v){
         // fungsi logut shared prefrence
+        final SharedPrefManager prefManager = new SharedPrefManager(this);
         prefManager.userLogout();
         Intent intent = new Intent(ProfileScreen.this, LoginScreen.class);
         startActivity(intent);

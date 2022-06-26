@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.example.aloparent.Adapter.SlideViewPagerAdapter;
@@ -33,21 +34,21 @@ public class OnBoardingScreen extends AppCompatActivity {
         adapter = new SlideViewPagerAdapter(this);
         viewPager.setAdapter(adapter);
 
-//        if(IsOpenAlready()){
-//            Intent intent = new Intent(OnBoardingScreen.this,LoginScreen.class);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-//            startActivity(intent);
-//        }else {
-//            SharedPreferences.Editor editor=getSharedPreferences("slide",MODE_PRIVATE).edit();
-//            editor.putBoolean("slide",true);
-//            editor.commit();
-//        }
+        if(IsOpenAlready()){
+            Intent intent = new Intent(OnBoardingScreen.this,LoginScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }else {
+            SharedPreferences.Editor editor=getSharedPreferences("slide",MODE_PRIVATE).edit();
+            editor.putBoolean("slide",true);
+            editor.commit();
+        }
     }
 
-//    private boolean IsOpenAlready() {
-//
-//        SharedPreferences sharedPreferences = getSharedPreferences("slide",MODE_PRIVATE);
-//        boolean result = sharedPreferences.getBoolean("slide",false);
-//        return result;
-//    }
+    private boolean IsOpenAlready() {
+
+        SharedPreferences sharedPreferences = getSharedPreferences("slide",MODE_PRIVATE);
+        boolean result = sharedPreferences.getBoolean("slide",false);
+        return result;
+    }
 }

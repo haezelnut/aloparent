@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
@@ -29,6 +31,32 @@ import java.util.Map;
 
 public class LoginScreen extends AppCompatActivity {
 
+    // tekan back navbar 2 kali untuk keluar aplikasi
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            Intent a = new Intent(Intent.ACTION_MAIN);
+            a.addCategory(Intent.CATEGORY_HOME);
+            a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(a);
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Tekan Sekali lagi Untuk Keluar", Toast.LENGTH_SHORT).show();
+
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
+
+
     private EditText inputEmail,inputPassword;
     private boolean passwordVisible;
     private ProgressBar progressBar;
@@ -45,6 +73,7 @@ public class LoginScreen extends AppCompatActivity {
     }
     public void btnMasuk(View v){
         String temp_email = inputEmail.getText().toString(), temp_password = inputPassword.getText().toString();
+
         if(temp_email.isEmpty()){
             inputEmail.setError("Silahkan isi kolom e-mail...");
             inputEmail.requestFocus();
