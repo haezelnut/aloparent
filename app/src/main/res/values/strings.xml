@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">aloparent</string>
+    <string name="soal1a">Pagi ini seperti biasa setelah bangun tidur, Andi akan mandi. Namun, Andi ingin bermain lompat-lompatan.\n\nDibawah ini sudah ada kotak berisi barang barang, Andi dapat berhenti pada kotak yang berisikan peralatan mandi, dan harus melompat pada kotak yang tidak berisikan peralatan mandi.\n\nBerapa kotak Andi dapat berhenti (tidak melompat)</string>
 </resources>

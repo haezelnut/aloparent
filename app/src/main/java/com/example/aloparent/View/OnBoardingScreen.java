@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 import com.example.aloparent.Adapter.SlideViewPagerAdapter;
 import com.example.aloparent.R;
-import com.example.aloparent.SharedPrefManager;
+import com.example.aloparent.SharedRefrence.SharedPrefManager;
 
 public class OnBoardingScreen extends AppCompatActivity {
 

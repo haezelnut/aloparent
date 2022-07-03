@@ -23,8 +23,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.aloparent.R;
-import com.example.aloparent.SharedPrefManager;
-import com.example.aloparent.UserModel;
+import com.example.aloparent.SharedRefrence.SharedPrefManager;
+import com.example.aloparent.SharedRefrence.UserModel;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -142,7 +142,7 @@ public class LoginScreen extends AppCompatActivity {
                 if(response.equals("TRUE")){
                     // menyimpan data user menggunakan shared refrence
                     final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
-                    UserModel user = new UserModel(temp_Email,temp_Email);
+                    UserModel user = new UserModel(temp_Email,temp_Email, temp_password, temp_Email);
                     prefManager.setUserLogin(user, true);
                     //Starting Home activity
                     Intent intent = new Intent(LoginScreen.this, BerhasilLogin.class);

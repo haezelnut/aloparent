@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.aloparent.R;
-import com.example.aloparent.SharedPrefManager;
+import com.example.aloparent.SharedRefrence.SharedPrefManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;

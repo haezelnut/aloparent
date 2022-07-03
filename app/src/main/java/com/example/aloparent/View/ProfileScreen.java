@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.aloparent.R;
-import com.example.aloparent.SharedPrefManager;
+import com.example.aloparent.SharedRefrence.SharedPrefManager;
 
 public class ProfileScreen extends AppCompatActivity {
 

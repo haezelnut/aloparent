@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoalKelas.SoalA1">
+  
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    
+    <ProgressBar
+        android:id="@+id/progressBarKelas"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:progressDrawable="@drawable/costum_progress_bg_materikelas"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        />
+
+    <LinearLayout
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/soala1"
+        android:visibility="visible"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="@string/soal1a"
+          android:textColor="#5B5B5B"
+          />
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="35dp"
+          android:src="@drawable/koper_image_soal1a" />
+
+      <ImageView
+          android:layout_marginTop="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/pastagigi_image_soal1a"/>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/sabun_image_soal1a"
+          android:layout_marginTop="20dp"/>
+
+      <ImageView
+          android:layout_marginTop="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/shampo_image_soal1a"/>
+
+      <LinearLayout
+          android:layout_marginTop="45dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+      <RadioGroup
+          android:id="@+id/radioGroupSoalA1"
+          android:layout_width="35dp"
+          android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/a1_opsi1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:button="@drawable/radio_selector"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/a1_opsi2"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:button="@drawable/radio_selector"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/a1_opsi3"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:button="@drawable/radio_selector"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/a1_opsi4"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:button="@drawable/radio_selector"/>
+      </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@drawable/white_rectangle_notifikasi"
+              android:elevation="5dp"
+              android:text="3 kali"
+              android:textSize="15dp"
+              android:fontFamily="@font/poppins_regular"
+              android:textColor="#939393"
+              android:paddingHorizontal="20dp"
+              android:gravity="center_vertical"
+              />
+
+          <TextView
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@drawable/white_rectangle_notifikasi"
+              android:elevation="5dp"
+              android:text="2 kali"
+              android:textSize="15dp"
+              android:fontFamily="@font/poppins_regular"
+              android:textColor="#939393"
+              android:paddingHorizontal="20dp"
+              android:gravity="center_vertical"
+              />
+
+          <TextView
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@drawable/white_rectangle_notifikasi"
+              android:elevation="5dp"
+              android:text="1 kali"
+              android:textSize="15dp"
+              android:fontFamily="@font/poppins_regular"
+              android:textColor="#939393"
+              android:paddingHorizontal="20dp"
+              android:gravity="center_vertical"
+              />
+
+          <TextView
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@drawable/white_rectangle_notifikasi"
+              android:elevation="5dp"
+              android:text="Melompat terus"
+              android:textSize="15dp"
+              android:fontFamily="@font/poppins_regular"
+              android:textColor="#939393"
+              android:paddingHorizontal="20dp"
+              android:gravity="center_vertical"
+              />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soala2"
+        android:visibility="gone"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_marginHorizontal="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="Ani sedang bermain dengan Ayah menggunakan benda-benda di bawah ini."
+          android:textColor="#5B5B5B"
+          />
+
+      <ImageView
+          android:layout_marginHorizontal="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:src="@drawable/gambar_soal_a2" />
+
+      <TextView
+          android:layout_marginHorizontal="30dp"
+          android:layout_marginTop="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="Ayah ingin benda berwarna hijau disusun diantara benda berwarna merah.\n\nDapatkah kamu membantu Ani untuk menyusun benda tersebut?"
+          android:textColor="#5B5B5B"
+          />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_centerHorizontal="true"
+            android:id="@+id/radioGroupSoalA2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+          <androidx.appcompat.widget.AppCompatRadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:button="@drawable/radio_selector"
+              android:drawableRight="@drawable/images_opsi1_soala2"
+              />
+          <androidx.appcompat.widget.AppCompatRadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:button="@drawable/radio_selector"
+              android:drawableRight="@drawable/images_soala2_opsi2"
+              />
+
+        </RadioGroup>
+        <RadioGroup
+            android:layout_below="@id/radioGroupSoalA2_1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/radioGroupSoalA2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+          <androidx.appcompat.widget.AppCompatRadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:button="@drawable/radio_selector"
+              android:drawableRight="@drawable/images_soala2_opsi3"
+              />
+          <androidx.appcompat.widget.AppCompatRadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:button="@drawable/radio_selector"
+              android:drawableRight="@drawable/images_soala2_opsi4"
+              />
+
+        </RadioGroup>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_cek_soalA"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:text="Cek"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_rectangle_orange"
+        android:layout_marginBottom="55dp"
+        />
+    
+    
+    
+  </LinearLayout>
+
+  </ScrollView>

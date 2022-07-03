@@ -1,4 +1,4 @@
-package com.example.aloparent;
+package com.example.aloparent.SharedRefrence;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,6 +12,8 @@ public class SharedPrefManager {
     private static final String SHARED_PREF_NAME = "MY_APP_PREF";
     private static final String USER_KEY = "USER_EMAIL";
     private static final String NAME_KEY = "USER_NAME";
+    private static final String PASSWORD_KEY = "USER_PASSWORD";
+    private static final String IMAGE_KEY = "USER_IMAGE";
     private static final String IS_LOGGER_IN_KEY = "ISLOGGEDIN";
 
     // methord hanya aplikasi ini yang dapat menggunakan shared refrence
@@ -24,7 +26,9 @@ public class SharedPrefManager {
     public UserModel getUserLogin(){
         return new UserModel(
                 preferences.getString(USER_KEY, null),
-                preferences.getString(NAME_KEY, null)
+                preferences.getString(NAME_KEY, null),
+                preferences.getString(PASSWORD_KEY, null),
+                preferences.getString(IMAGE_KEY, null)
         );
         }
 
@@ -34,6 +38,8 @@ public class SharedPrefManager {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString(USER_KEY,user.getUserMail());
         editor.putString(NAME_KEY, user.getUserName());
+        editor.putString(PASSWORD_KEY, user.getUserPassword());
+        editor.putString(IMAGE_KEY, user.getUserImage());
         editor.putBoolean(IS_LOGGER_IN_KEY, IsloggedIn);
         editor.apply();
     }
