@@ -2,6 +2,7 @@ package com.example.aloparent.SoalKelas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,13 +13,15 @@ import android.widget.RadioGroup;
 
 import com.example.aloparent.R;
 import com.example.aloparent.SoalKelas.Message;
+import com.example.aloparent.View.Home;
+import com.example.aloparent.View.ProfileScreen;
 
 public class SoalA1 extends AppCompatActivity {
 
     RadioGroup radiogroupA2_1,radiogroupA2_2, radioGroupSoalA1;
     ProgressBar progressBar;
     LinearLayout soalA1, soalA2, soalA3, SoalA4;
-    Button btn_cek;
+    Button btn_cek, back;
 
 
     private RadioGroup.OnCheckedChangeListener listener1 = new RadioGroup.OnCheckedChangeListener() {
@@ -57,6 +60,15 @@ public class SoalA1 extends AppCompatActivity {
         radioGroupSoalA1 = (RadioGroup) findViewById(R.id.radioGroupSoalA1);
         radiogroupA2_1 = (RadioGroup) findViewById(R.id.radioGroupSoalA2_1);
         radiogroupA2_2 = (RadioGroup) findViewById(R.id.radioGroupSoalA2_2);
+        back =  findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SoalA1.this, Home.class);
+                startActivity(intent);
+            }
+        });
 
         radiogroupA2_1.clearCheck();
         radiogroupA2_2.clearCheck();

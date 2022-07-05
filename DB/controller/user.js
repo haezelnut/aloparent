@@ -13,18 +13,25 @@ var connection = mysql.createConnection({
   database: 'aloparent_db',
 });
 
-//Function Upload Image Users
-exports.uploadUserImage = async (req, res) => {
-  uploadUserIMG(req, res, (err) => {
-    if (err) {
-      console.log(err);
-      res.status(400).send('Something went wrong!');
+//Get User Data Function
+exports.getUserData = async (req, res) => {
+  try {
+    const email = req.params.email;
+    const getData = await connection.promise().query(` 
+		SELECT * FROM user WHERE email = '${email}'
+		`);
+
+    if (getData.length === 0) {
+      return res.status(400).json({ message: 'E-mail Not Found !!!' });
+    } else {
+      res.json(getData[0][0]);
     }
-    res.send(req.file);
-  });
+  } catch (e) {
+    console.log(e);
+  }
 };
 
-//Function Tambah User
+//Register Function
 exports.addUser = async (req, res) => {
   const schema = {
     id_user: 'number',
@@ -114,32 +121,7 @@ exports.replaceData = async (req, res) => {
   res.json(userID);
 };
 
-//Function Show All User
-exports.showUser = async (req, res) => {
-  userID = await user.findAll();
-  return res.json(userID);
-};
-
-//Function Show User by ID
-exports.showUserByID = async (req, res) => {
-  const id = req.params.id;
-  const userID = await user.findByPk(id);
-  return res.json(userID || {});
-};
-
-exports.deleteUser = async (req, res) => {
-  const id = req.params.id;
-  userID = await user.findByPk(id);
-
-  if (!userID) {
-    return res.json({ message: 'User Not Found!' });
-  }
-
-  await userID.destroy();
-
-  res.json({ message: 'User was Deleted!' });
-};
-
+//Login Function
 exports.login = async (req, res) => {
   const { email, password } = req.body;
 
