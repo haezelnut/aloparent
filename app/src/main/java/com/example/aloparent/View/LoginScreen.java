@@ -20,11 +20,16 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.aloparent.R;
 import com.example.aloparent.SharedRefrence.SharedPrefManager;
 import com.example.aloparent.SharedRefrence.UserModel;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -127,8 +132,6 @@ public class LoginScreen extends AppCompatActivity {
         if (isLoggedIn){
             startActivity(new Intent(getApplicationContext(),Home.class));
         }
-
-
     }
 
     private void sendData(String temp_Email, String temp_password) {
@@ -140,15 +143,7 @@ public class LoginScreen extends AppCompatActivity {
             public void onResponse(String response) {
                 Log.d("",response);
                 if(response.equals("TRUE")){
-                    // menyimpan data user menggunakan shared refrence
-                    final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
-                    UserModel user = new UserModel(temp_Email,temp_Email, temp_password, temp_Email);
-                    prefManager.setUserLogin(user, true);
-                    //Starting Home activity
-                    Intent intent = new Intent(LoginScreen.this, BerhasilLogin.class);
-                    startActivity(intent);
-                    progressBar.setVisibility(View.GONE);
-                    Toast.makeText(LoginScreen.this, "Login Successful !!!", Toast.LENGTH_SHORT).show();
+                    getUserInfromation(temp_Email);
                 }else if(response.equals("PASSWORD FALSE")){
                     progressBar.setVisibility(View.GONE);
                     Toast.makeText(LoginScreen.this, "Password is Wrong !!!", Toast.LENGTH_LONG).show();
@@ -171,5 +166,49 @@ public class LoginScreen extends AppCompatActivity {
             }
         };
         requestQueue.add(stringRequest);
+    }
+
+    private void getUserInfromation(String email){
+        RequestQueue requestQueue1 = Volley.newRequestQueue(this);
+        String URL = "http://192.168.43.247:3000/users/"+email;
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                Request.Method.GET,
+                URL,
+                null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try{
+
+                            progressBar.setVisibility(View.GONE);
+                            String username = (String) response.get("username");
+                            String password = (String) response.get("password");
+                            String userImage = (String) response.get("user_Image");
+
+                            System.out.println(username);
+                            System.out.println(password);
+                            System.out.println(userImage);
+                            // menyimpan data user menggunakan shared refrence
+                            final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
+                            UserModel user = new UserModel(email,username,password,userImage);
+                            prefManager.setUserLogin(user, true);
+
+                            //Starting Home activity
+                            Intent intent = new Intent(LoginScreen.this, BerhasilLogin.class);
+                            startActivity(intent);
+                            Toast.makeText(LoginScreen.this, "Login Successful !!!", Toast.LENGTH_SHORT).show();
+                        }catch (JSONException e){
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+            }
+        });
+
+        requestQueue1.add(jsonObjectRequest);
     }
 }
