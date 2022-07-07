@@ -126,9 +126,9 @@ public class Home extends AppCompatActivity {
 
         List<SlideModel> slideModels = new ArrayList<>();
 
-        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
-        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
-        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agar di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"Agar di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agar di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
 
         imageSlider.setImageList(slideModels,true);
 

@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Aloparent"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name=".SoalKelas.SoalA1"
+            android:name=".SoalKelas.SoalA"
             android:exported="false" />
         <activity
             android:name=".View.UbahKataSandi"

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SoalKelas.SoalA1">
+    tools:context=".SoalKelas.SoalA">
   
   <LinearLayout
       android:layout_width="match_parent"
@@ -20,6 +20,7 @@
         android:layout_height="15dp"
         android:progressDrawable="@drawable/costum_progress_bg_materikelas"
         style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
         />
 
     <LinearLayout
@@ -32,6 +33,7 @@
         android:orientation="vertical">
 
       <TextView
+          android:id="@+id/textViewPertanyaan"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:textSize="14dp"
@@ -41,28 +43,12 @@
           />
 
       <ImageView
+          android:id="@+id/imgViewPertanyaan"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginTop="35dp"
           android:src="@drawable/koper_image_soal1a" />
 
-      <ImageView
-          android:layout_marginTop="20dp"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:src="@drawable/pastagigi_image_soal1a"/>
-
-      <ImageView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:src="@drawable/sabun_image_soal1a"
-          android:layout_marginTop="20dp"/>
-
-      <ImageView
-          android:layout_marginTop="20dp"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:src="@drawable/shampo_image_soal1a"/>
 
       <LinearLayout
           android:layout_marginTop="45dp"
@@ -110,6 +96,7 @@
             android:orientation="vertical">
 
           <TextView
+              android:id="@+id/jawaban1"
               android:layout_width="match_parent"
               android:layout_height="50dp"
               android:background="@drawable/white_rectangle_notifikasi"
@@ -123,6 +110,7 @@
               />
 
           <TextView
+              android:id="@+id/jawaban2"
               android:layout_marginTop="20dp"
               android:layout_width="match_parent"
               android:layout_height="50dp"
@@ -137,6 +125,7 @@
               />
 
           <TextView
+              android:id="@+id/jawaban3"
               android:layout_marginTop="20dp"
               android:layout_width="match_parent"
               android:layout_height="50dp"
@@ -151,6 +140,7 @@
               />
 
           <TextView
+              android:id="@+id/jawaban4"
               android:layout_marginTop="20dp"
               android:layout_width="match_parent"
               android:layout_height="50dp"
@@ -166,91 +156,6 @@
 
         </LinearLayout>
     </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/soala2"
-        android:visibility="gone"
-        android:layout_marginTop="45dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-      <TextView
-          android:layout_marginHorizontal="30dp"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textSize="14dp"
-          android:fontFamily="@font/poppins_medium"
-          android:text="Ani sedang bermain dengan Ayah menggunakan benda-benda di bawah ini."
-          android:textColor="#5B5B5B"
-          />
-
-      <ImageView
-          android:layout_marginHorizontal="30dp"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="25dp"
-          android:src="@drawable/gambar_soal_a2" />
-
-      <TextView
-          android:layout_marginHorizontal="30dp"
-          android:layout_marginTop="30dp"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textSize="14dp"
-          android:fontFamily="@font/poppins_medium"
-          android:text="Ayah ingin benda berwarna hijau disusun diantara benda berwarna merah.\n\nDapatkah kamu membantu Ani untuk menyusun benda tersebut?"
-          android:textColor="#5B5B5B"
-          />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_centerHorizontal="true"
-            android:id="@+id/radioGroupSoalA2_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-          <androidx.appcompat.widget.AppCompatRadioButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:button="@drawable/radio_selector"
-              android:drawableRight="@drawable/images_opsi1_soala2"
-              />
-          <androidx.appcompat.widget.AppCompatRadioButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:button="@drawable/radio_selector"
-              android:drawableRight="@drawable/images_soala2_opsi2"
-              />
-
-        </RadioGroup>
-        <RadioGroup
-            android:layout_below="@id/radioGroupSoalA2_1"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/radioGroupSoalA2_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-          <androidx.appcompat.widget.AppCompatRadioButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:button="@drawable/radio_selector"
-              android:drawableRight="@drawable/images_soala2_opsi3"
-              />
-          <androidx.appcompat.widget.AppCompatRadioButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:button="@drawable/radio_selector"
-              android:drawableRight="@drawable/images_soala2_opsi4"
-              />
-
-        </RadioGroup>
-    </RelativeLayout>
     </LinearLayout>
 
 
