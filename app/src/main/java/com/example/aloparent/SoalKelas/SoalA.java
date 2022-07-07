@@ -10,8 +10,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -30,8 +32,9 @@ public class SoalA extends AppCompatActivity {
     Button btn_cek;
     Dialog dialog;
     AppCompatRadioButton jawaban1, jawaban2, jawaban3, jawaban4;
-    TextView pertanyaan, txtJawaban1, txtJawaban2,txtJawaban3,txtJawaban4;
-    ImageView imgPertanyaan;
+    TextView pertanyaan, pertanyaan2, txtJawaban1, txtJawaban2,txtJawaban3,txtJawaban4;
+    ImageView imgPertanyaan, imgJawaban1, imgJawaban2, imgJawaban3, imgJawaban4;
+    LinearLayout linearLayout;
 
     SoalModel currentQuestion;
     int indexCurrentQuestion = 0;
@@ -59,6 +62,7 @@ public class SoalA extends AppCompatActivity {
         imgPertanyaan = findViewById(R.id.imgViewPertanyaan);
 
         pertanyaan = findViewById(R.id.textViewPertanyaan);
+        pertanyaan2 = findViewById(R.id.textViewPertanyaan2);
         txtJawaban1 = findViewById(R.id.jawaban1);
         txtJawaban2 =  findViewById(R.id.jawaban2);
         txtJawaban3 =  findViewById(R.id.jawaban3);
@@ -109,6 +113,15 @@ public class SoalA extends AppCompatActivity {
                 // txtQuestion.setHeight(0);
             }
 
+            if(currentQuestion.getPertanyaan2().length() > 0) {
+                pertanyaan2.setText(currentQuestion.getPertanyaan2());
+                pertanyaan2.setVisibility(View.VISIBLE);
+                // txtQuestion.setHeight(txtQuestion.getLayoutParams().WRAP_CONTENT);
+            } else {
+                pertanyaan2.setVisibility(View.GONE);
+                // txtQuestion.setHeight(0);
+            }
+
             if(currentQuestion.getImgPertanyaan() > 0) {
                 imgPertanyaan.setImageResource(currentQuestion.getImgPertanyaan());
             } else {
@@ -139,11 +152,84 @@ public class SoalA extends AppCompatActivity {
                 txtJawaban4.setText(currentQuestion.getJawaban4());
             }
 
+            adjustQuestion();
+
+
             indexCurrentQuestion++;
             btn_cek.setText("Submit");;
             answered = false;
 
         }
+    }
+
+    private void adjustQuestion() {
+        if(indexCurrentQuestion == 1){
+            txtJawaban1.setText("");
+            txtJawaban2.setText("");
+            txtJawaban3.setText("");
+            txtJawaban4.setText("");
+
+            int height = 780;
+            int width = 325;
+
+            radioGroupSoalA1.getLayoutParams().width = 90;
+
+            // linearLayout.getLayoutParams().width = width;
+
+            txtJawaban1.setHeight(txtJawaban1.getLayoutParams().height = height);
+            txtJawaban2.setHeight(txtJawaban2.getLayoutParams().height = height);
+            txtJawaban3.setHeight(txtJawaban3.getLayoutParams().height = height);
+            txtJawaban4.setHeight(txtJawaban4.getLayoutParams().height = height);
+
+            txtJawaban1.setWidth(txtJawaban1.getLayoutParams().width = width);
+            txtJawaban2.setWidth(txtJawaban2.getLayoutParams().width = width);
+            txtJawaban3.setWidth(txtJawaban3.getLayoutParams().width = width);
+            txtJawaban4.setWidth(txtJawaban4.getLayoutParams().width = width);
+
+            jawaban1.setHeight(jawaban1.getLayoutParams().height = height);
+            jawaban2.setHeight(jawaban2.getLayoutParams().height = height);
+            jawaban3.setHeight(jawaban3.getLayoutParams().height = height);
+            jawaban4.setHeight(jawaban4.getLayoutParams().height = height);
+
+        }
+        if (indexCurrentQuestion == 2){
+            int height = 400;
+            int width = 400;
+
+            txtJawaban1.setHeight(txtJawaban1.getLayoutParams().height = height);
+            txtJawaban2.setHeight(txtJawaban2.getLayoutParams().height = height);
+            txtJawaban3.setHeight(txtJawaban3.getLayoutParams().height = height);
+            txtJawaban4.setHeight(txtJawaban4.getLayoutParams().height = height);
+
+            txtJawaban1.setWidth(txtJawaban1.getLayoutParams().width = width);
+            txtJawaban2.setWidth(txtJawaban2.getLayoutParams().width = width);
+            txtJawaban3.setWidth(txtJawaban3.getLayoutParams().width = width);
+            txtJawaban4.setWidth(txtJawaban4.getLayoutParams().width = width);
+
+            jawaban1.setHeight(jawaban1.getLayoutParams().height = height);
+            jawaban2.setHeight(jawaban2.getLayoutParams().height = height);
+            jawaban3.setHeight(jawaban3.getLayoutParams().height = height);
+            jawaban4.setHeight(jawaban4.getLayoutParams().height = height);
+        }
+        if (indexCurrentQuestion == 3){
+            int height = 380;
+            int width = 380;
+
+            txtJawaban1.setHeight(txtJawaban1.getLayoutParams().height = height);
+            txtJawaban2.setHeight(txtJawaban2.getLayoutParams().height = height);
+            txtJawaban3.setHeight(txtJawaban3.getLayoutParams().height = height);
+            txtJawaban4.setVisibility(View.GONE);
+
+            txtJawaban1.setWidth(txtJawaban1.getLayoutParams().width = width);
+            txtJawaban2.setWidth(txtJawaban2.getLayoutParams().width = width);
+            txtJawaban3.setWidth(txtJawaban3.getLayoutParams().width = width);
+
+            jawaban1.setHeight(jawaban1.getLayoutParams().height = height);
+            jawaban2.setHeight(jawaban2.getLayoutParams().height = height);
+            jawaban3.setHeight(jawaban3.getLayoutParams().height = height);
+            jawaban4.setVisibility(View.GONE);
+        }
+
     }
 
 
@@ -154,32 +240,45 @@ public class SoalA extends AppCompatActivity {
                         "Dibawah ini sudah ada kotak berisi barang barang, Andi dapat berhenti pada kotak yang berisikan peralatan mandi, dan harus melompat pada kotak yang tidak berisikan peralatan mandi. \n" +
                         "\n" +
                         "Berapa kotak Andi dapat berhenti (tidak melompat)?", R.drawable.gambar_soala1,
+                "",
                 "3 kali", 0,
                 "2 kali", 0,
                 "1 kali",0,
                 "Melompat terus", 0,
                 1));
         questionsList.add(new SoalModel(
-                "Cari median dari data pembuatan roti di sebuah pabrik dalam beberapa hari berikut.\n 20, 30, 25, 32, 26, 33, 36, 34, 28, 29", 0,
-                "A. 29", 0,
-                "B. 29,5", 0,
-                "C. 30", 0,
-                "D. 28,5", 0,
-                2));
+                "Ani sedang bermain dengan Ayah menggunakan benda-benda di bawah ini.",R.drawable.gambar_soal_a2,
+                "Ayah ingin benda berwarna hijau disusun diantara benda berwarna merah.\n" +
+                        "\n" +
+                        "Dapatkah kamu membantu Ani untuk menyusun benda tersebut?",
+                "",R.drawable.images_opsi1_soala2,
+                "",R.drawable.images_soala2_opsi2,
+                "",R.drawable.images_soala2_opsi3,
+                "",R.drawable.images_soala2_opsi4,
+                4));
         questionsList.add(new SoalModel(
-                "Hasil panen kakek selama 5 bulan dalam ton adalah 10, 6, 7, 9, 8. Rata-rata hasil panen kakek tiap bulan adalah", 0,
-                "A. 7", 0,
-                "B. 8", 0,
-                "C. 9", 0,
-                "D. 10", 0,
-                2));
+                "Anya mempunyai sebuah gelang, namun tiba-tiba gelang itu terputus. Ia ingin memperbaikinya.",R.drawable.img_soal_a3,
+                "Bagaimana bentuk gelang setelah diperbaiki?",
+                "",R.drawable.img_jawaban1_soala3,
+                "",R.drawable.img_jawaban2_soala3,
+                "",R.drawable.img_jawaban3_soala3,
+                "",R.drawable.img_jawaban2_soala3,
+                2
+                ));
         questionsList.add(new SoalModel(
-                "Rata-rata dan median dari data di atas adalah", R.drawable.games_image,
-                "A. Rata-rata = 7,5 dan median = 7", 0,
-                "B. Rata-rata = 7,5 dan median = 7,5", 0,
-                "C. Rata-rata = 7 dan median = 7,5", 0,
-                "D. Rata-rata = 7,5 dan median = 8", 0,
-                1));
+                "Bulan lalu saat Ulangan Akhir Semester, Ani mendapatkan hasil yang memuaskan. Ayah Ani berjanji akan membelikan Ani sepatu dan baju. \n" +
+                        "\n" +
+                        "Saat ini Ayah dan Ani sedang di pusat perbelanjaan. Ayah membebaskan Ani untuk membeli barang sesuai keinginannya. Ani menginginkan sepatu yang berbeda warna dengan baju. \n" +
+                        "\n" +
+                        "Jika ia membeli sepatu biru maka ia tidak akan memilih baju biru dan hijau. Jika Ia memilih sepatu kuning, ia tidak akan memilih baju berlengan panjang, pink, dan kuning. \n" +
+                        "\n" +
+                        "Berdasarkan daftar barang dibawah ini, manakah kemungkinan barang yang akan dibeli Ani jika ia menginginkan sepatu dan baju?",0,
+                "",
+                "",R.drawable.img_jawaban1_soala4,
+                "",R.drawable.img_jawaban2_soala4,
+                "",R.drawable.img_jawaban3_soala4,
+                "",0,
+                3));
     }
 
 

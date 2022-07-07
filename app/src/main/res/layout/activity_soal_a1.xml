@@ -49,6 +49,17 @@
           android:layout_marginTop="35dp"
           android:src="@drawable/koper_image_soal1a" />
 
+      <TextView
+          android:layout_marginTop="30dp"
+          android:id="@+id/textViewPertanyaan2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="@string/soal1a"
+          android:textColor="#5B5B5B"
+          />
+
 
       <LinearLayout
           android:layout_marginTop="45dp"
@@ -56,9 +67,11 @@
           android:layout_height="wrap_content"
           android:orientation="horizontal">
       <RadioGroup
+          android:layout_marginLeft="30dp"
           android:id="@+id/radioGroupSoalA1"
           android:layout_width="35dp"
-          android:layout_height="wrap_content">
+          android:layout_height="wrap_content"
+          >
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/a1_opsi1"
@@ -91,6 +104,8 @@
       </RadioGroup>
 
         <LinearLayout
+            android:layout_marginRight="30dp"
+            android:id="@+id/liniarLayoutJawaban"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -101,7 +116,7 @@
               android:layout_height="50dp"
               android:background="@drawable/white_rectangle_notifikasi"
               android:elevation="5dp"
-              android:text="3 kali"
+              android:text=""
               android:textSize="15dp"
               android:fontFamily="@font/poppins_regular"
               android:textColor="#939393"
@@ -116,7 +131,7 @@
               android:layout_height="50dp"
               android:background="@drawable/white_rectangle_notifikasi"
               android:elevation="5dp"
-              android:text="2 kali"
+              android:text=""
               android:textSize="15dp"
               android:fontFamily="@font/poppins_regular"
               android:textColor="#939393"
@@ -131,7 +146,7 @@
               android:layout_height="50dp"
               android:background="@drawable/white_rectangle_notifikasi"
               android:elevation="5dp"
-              android:text="1 kali"
+              android:text=""
               android:textSize="15dp"
               android:fontFamily="@font/poppins_regular"
               android:textColor="#939393"
@@ -146,7 +161,7 @@
               android:layout_height="50dp"
               android:background="@drawable/white_rectangle_notifikasi"
               android:elevation="5dp"
-              android:text="Melompat terus"
+              android:text=""
               android:textSize="15dp"
               android:fontFamily="@font/poppins_regular"
               android:textColor="#939393"

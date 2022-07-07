@@ -1,14 +1,15 @@
 package com.example.aloparent.SoalKelas;
 
 public class SoalModel {
-    private String pertanyaan, jawaban1, jawaban2, jawaban3, jawaban4;
+    private String pertanyaan, pertanyaan2, jawaban1, jawaban2, jawaban3, jawaban4;
     private int imgPertanyaan, imgJawaban1, imgJawaban2, imgJawaban3, imgJawaban4;
     private int kunciJawaban;
 
     public SoalModel() {}
 
-    public SoalModel(String pertanyaan,int imgPertanyaan, String jawaban1,int imgJawaban1, String jawaban2,int imgJawaban2, String jawaban3,int imgJawaban3, String jawaban4,  int imgJawaban4, int kunciJawaban) {
+    public SoalModel(String pertanyaan, int imgPertanyaan, String pertanyaan2, String jawaban1,int imgJawaban1, String jawaban2,int imgJawaban2, String jawaban3,int imgJawaban3, String jawaban4,  int imgJawaban4, int kunciJawaban) {
         this.pertanyaan = pertanyaan;
+        this.pertanyaan2 = pertanyaan2;
         this.jawaban1 = jawaban1;
         this.jawaban2 = jawaban2;
         this.jawaban3 = jawaban3;
@@ -28,6 +29,10 @@ public class SoalModel {
     public void setPertanyaan(String pertanyaan) {
         this.pertanyaan = pertanyaan;
     }
+
+    public String getPertanyaan2() { return pertanyaan2;}
+
+    public void setPertanyaan2(){ this.pertanyaan2 = pertanyaan2;}
 
     public String getJawaban1() {
         return jawaban1;
