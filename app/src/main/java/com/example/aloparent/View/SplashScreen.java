@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.aloparent.R;
-import com.example.aloparent.SoalKelas.SoalA;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -21,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, SoalA.class);
+                Intent intent = new Intent(SplashScreen.this, LoginScreen.class);
                 SplashScreen.this.startActivity(intent);
                 SplashScreen.this.finish();
             }

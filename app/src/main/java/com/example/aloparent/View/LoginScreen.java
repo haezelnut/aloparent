@@ -189,6 +189,7 @@ public class LoginScreen extends AppCompatActivity {
                             System.out.println(username);
                             System.out.println(password);
                             System.out.println(userImage);
+
                             // menyimpan data user menggunakan shared refrence
                             final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
                             UserModel user = new UserModel(email,username,password,userImage);
