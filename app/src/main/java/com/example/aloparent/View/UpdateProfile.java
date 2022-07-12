@@ -167,12 +167,14 @@ public class UpdateProfile extends AppCompatActivity {
         VolleyMultipartRequest volleyMultipartRequest = new VolleyMultipartRequest(Request.Method.PUT, url, new Response.Listener<NetworkResponse>() {
             @Override
             public void onResponse(NetworkResponse response) {
-                try{
-                JSONObject obj = new JSONObject(new String(response.data));
-                Intent i = new Intent(UpdateProfile.this, ProfileScreen.class);
-                startActivity(i);
-                }catch (JSONException e){
-                    e.printStackTrace();
+                if(response.equals("TRUE")){
+                    Toast.makeText(UpdateProfile.this, "Profile Updated !!!", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(UpdateProfile.this, ProfileScreen.class);
+                    startActivity(i);
+                }else{
+                    Toast.makeText(UpdateProfile.this, "Something Wrong !!!", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(UpdateProfile.this, ProfileScreen.class);
+                    startActivity(i);
                 }
             }
         }, new Response.ErrorListener() {

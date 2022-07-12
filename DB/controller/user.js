@@ -104,21 +104,26 @@ exports.updatePassword = async (req, res) => {
 
 //Function Update User [with PUT]
 exports.replaceData = async (req, res) => {
-  console.log(req.body);
-  console.log(req.file.filename);
-  var imgsrc = 'http://127.0.0.1:3000/images/image_user/' + req.file.fieldname;
-  const { username, email, password } = req.body;
-  const [checkUserEmail] = await connection.promise().query(` 
-    SELECT * FROM user WHERE email = '${email}'
-    `);
+	try{
+		
+	  console.log(req.body);
+	  console.log(req.file.filename);
+	  var imgsrc = 'http://127.0.0.1:3000/images/image_user/' + req.file.fieldname;
+	  const { username, email, password } = req.body;
+	  const [checkUserEmail] = await connection.promise().query(` 
+		SELECT * FROM user WHERE email = '${email}'
+		`);
 
-  userID = await connection.promise().query(`
-    UPDATE user
-    SET username='${username}', email='${email}',password='${password}', user_Image='${req.file.filename}'
-    WHERE email='${email}'
-    `);
-
-  res.json(userID);
+	  userID = await connection.promise().query(`
+		UPDATE user
+		SET username='${username}', email='${email}',password='${password}', user_Image='${req.file.filename}'
+		WHERE email='${email}'
+		`);
+		
+	  return res.status(200).send('TRUE');
+	}catch(e) {
+	  return res.status(400).send(e);
+	}
 };
 
 //Login Function
