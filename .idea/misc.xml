@@ -86,9 +86,18 @@
         <entry key="..\:/alo_parent/app/src/main/res/drawable/chip_text_color.xml" value="0.1955" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/costum_progress_bg.xml" value="0.16" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/costum_progress_bg_pembelajaran.xml" value="0.16" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/edukasi_selector.xml" value="0.1" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/home_selector.xml" value="0.1925" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_edukasi_icon.xml" value="0.19" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_hone.xml" value="0.19" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_jadwal_konseling.xml" value="0.19" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_kelas_icon.xml" value="0.19" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_konseling.xml" value="0.19" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_next_btn_blue.xml" value="0.1765" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_nextbtn.xml" value="0.1765" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/ic_visibility_off.xml" value="0.179" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/kelas_selector.xml" value="0.1" />
+        <entry key="..\:/alo_parent/app/src/main/res/drawable/konseling_selector.xml" value="0.1" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/radio_not_selected.xml" value="0.1855" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/radio_selected.xml" value="0.1855" />
         <entry key="..\:/alo_parent/app/src/main/res/drawable/radio_selector.xml" value="0.1855" />
@@ -118,6 +127,7 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/konseling_kesehatan.xml" value="0.3194444444444444" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.22" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/soal_selesai.xml" value="0.2" />
+        <entry key="..\:/alo_parent/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
       </map>
     </option>
   </component>

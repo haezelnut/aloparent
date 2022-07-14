@@ -115,6 +115,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setSelectedItemId(R.id.beranda);
 
         inputDataAnak = (LinearLayout) findViewById(R.id.tambahDataAnak);

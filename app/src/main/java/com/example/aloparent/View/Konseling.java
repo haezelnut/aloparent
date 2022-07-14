@@ -54,6 +54,7 @@ public class Konseling extends AppCompatActivity {
         setContentView(R.layout.activity_konseling);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setSelectedItemId(R.id.konseling);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
