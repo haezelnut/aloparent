@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +20,36 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.aloparent.R;
 import com.example.aloparent.View.Kelas;
+import com.example.aloparent.View.PanduanOrangTuaScreen;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SoalA extends AppCompatActivity {
+
+    boolean doubleBackToExitPressedOnce = false;
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            Intent intent = new Intent(SoalA.this, Kelas.class);
+            startActivity(intent);
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Tekan Sekali lagi Untuk Kembali ke Menu kelas", Toast.LENGTH_SHORT).show();
+
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
 
     RadioGroup radioGroupSoalA1;
     ProgressBar progressBar;
