@@ -9,7 +9,7 @@
         <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_profile_screen.xml" value="0.25" />
         <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_soal_a1.xml" value="0.11911231884057971" />
         <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_update_data_anak.xml" value="0.11911231884057971" />
-        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_update_profile.xml" value="0.33" />
+        <entry key="..\:/API/Course 2/aloparent/app/src/main/res/layout/activity_update_profile.xml" value="0.1" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.1045" />
         <entry key="..\:/Android Studio/FirstApp/aloparent/aloparent/app/src/main/res/drawable/ic_lock.xml" value="0.1045" />
@@ -129,6 +129,7 @@
         <entry key="..\:/alo_parent/app/src/main/res/layout/pilih_jadwal_konsul.xml" value="0.22" />
         <entry key="..\:/alo_parent/app/src/main/res/layout/soal_selesai.xml" value="0.2" />
         <entry key="..\:/alo_parent/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
+        <entry key="..\:/alo_parent/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1755" />
       </map>
     </option>
   </component>
