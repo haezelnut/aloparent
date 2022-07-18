@@ -9,8 +9,10 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -167,15 +169,7 @@ public class UpdateProfile extends AppCompatActivity {
         VolleyMultipartRequest volleyMultipartRequest = new VolleyMultipartRequest(Request.Method.PUT, url, new Response.Listener<NetworkResponse>() {
             @Override
             public void onResponse(NetworkResponse response) {
-                if(response.equals("TRUE")){
-                    Toast.makeText(UpdateProfile.this, "Profile Updated !!!", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(UpdateProfile.this, ProfileScreen.class);
-                    startActivity(i);
-                }else{
-                    Toast.makeText(UpdateProfile.this, "Something Wrong !!!", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(UpdateProfile.this, ProfileScreen.class);
-                    startActivity(i);
-                }
+                getUserInfromation(email);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -202,6 +196,47 @@ public class UpdateProfile extends AppCompatActivity {
         };
         //adding the request to volley
         Volley.newRequestQueue(this).add(volleyMultipartRequest);
+    }
+
+    private void getUserInfromation(String email){
+        RequestQueue requestQueue1 = Volley.newRequestQueue(this);
+        String URL = "http://192.168.43.247:3000/users/"+email;
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                Request.Method.GET,
+                URL,
+                null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try{
+
+                            String username = (String) response.get("username");
+                            String password = (String) response.get("password");
+                            String userImage = (String) response.get("user_Image");
+
+
+                            // menyimpan data user menggunakan shared refrence
+                            final SharedPrefManager prefManager = new SharedPrefManager(getApplicationContext());
+                            UserModel user = new UserModel(email,username,password,userImage);
+                            prefManager.setUserLogin(user, true);
+
+                            //Starting Home activity
+                            Toast.makeText(UpdateProfile.this, "Profile Updated !!!", Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(UpdateProfile.this, ProfileScreen.class);
+                            startActivity(i);
+                        }catch (JSONException e){
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+            }
+        });
+
+        requestQueue1.add(jsonObjectRequest);
     }
 
 }

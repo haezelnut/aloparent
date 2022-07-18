@@ -40,6 +40,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.github.bumptech.glide:glide:4.13.2'
+    implementation 'com.squareup.picasso:picasso:2.8'
     implementation 'com.github.dhaval2404:imagepicker:2.1'
     implementation 'tech.abd3lraouf:pageindicatorview:1.0.3'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
