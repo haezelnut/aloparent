@@ -203,7 +203,7 @@
                     android:layout_height="54dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/foto_profil_lesti" />
+                    android:src="@drawable/icon_pembelajaran1" />
 
                 <TextView
                     android:id="@+id/tanggalPemblajaran1"
@@ -213,7 +213,7 @@
                     android:layout_marginTop="13dp"
                     android:layout_toRightOf="@+id/icom_materi1"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="24 mei 2022"
+                    android:text="Pembelajaran 1"
                     android:textColor="@color/white"
                     android:textSize="15dp" />
 
@@ -281,7 +281,7 @@
                     android:layout_height="54dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/foto_profil_lesti" />
+                    android:src="@drawable/icon_pembelajaran2" />
 
                 <TextView
                     android:id="@+id/tanggalPemblajaran2"
@@ -291,7 +291,7 @@
                     android:layout_marginTop="13dp"
                     android:layout_toRightOf="@+id/icom_materi2"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="25 mei 2022"
+                    android:text="Pembelajaran 2"
                     android:textColor="@color/white"
                     android:textSize="15dp" />
 
@@ -360,7 +360,7 @@
                     android:layout_height="54dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/foto_profil_lesti" />
+                    android:src="@drawable/icon_pembelajaran3" />
 
                 <TextView
                     android:id="@+id/tanggalPemblajaran3"
@@ -370,7 +370,7 @@
                     android:layout_marginTop="13dp"
                     android:layout_toRightOf="@+id/icom_materi3"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="26 mei 2022"
+                    android:text="Pembelajaran 3"
                     android:textColor="@color/white"
                     android:textSize="15dp" />
 
