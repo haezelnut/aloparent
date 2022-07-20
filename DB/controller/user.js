@@ -2,24 +2,13 @@ const Validator = require('fastest-validator');
 const { user } = require('../models');
 const mysql = require('mysql2');
 const valid = new Validator();
-const path = require('path');
-const multer = require('multer');
-const user_storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, './images/image_user');
-  },
-  filename: (req, file, cb) => {
-    console.log(file);
-    cb(null, new Date().toISOString().replace(/[\/\\:]/g, '_') + file.originalname);
-  },
-});
+const express = require('express');
+const app = express();
+const fs = require('fs');
 
-const uploadUserIMG = multer({
-  storage: user_storage,
-  limit: {
-    fileSize: 1000000, // 1000000 Bytes = 1 MB
-  },
-}).single('user_Image');
+app.use(express.static(__dirname + '/images/image_user'));
+
+//User Profile Images
 
 let userID;
 var connection = mysql.createConnection({
@@ -29,18 +18,43 @@ var connection = mysql.createConnection({
   database: 'aloparent_db',
 });
 
-//Function Upload Image Users
-exports.uploadUserImage = async (req, res) => {
-  uploadUserIMG(req, res, (err) => {
-    if (err) {
-      console.log(err);
-      res.status(400).send('Something went wrong!');
+//Get User Data Function
+exports.getUserData = async (req, res) => {
+  try {
+    const email = req.params.email;
+    const getData = await connection.promise().query(` 
+		SELECT * FROM user WHERE email = '${email}'
+		`);
+
+    if (getData.length === 0) {
+      return res.status(400).json({ message: 'E-mail Not Found !!!' });
+    } else {
+      res.json(getData[0][0]);
     }
-    res.send(req.file);
-  });
+  } catch (e) {
+    console.log(e);
+  }
 };
 
-//Function Tambah User
+exports.getImage = async (req, res) => {
+  try {
+    const email = req.params.email;
+    const getData = await connection.promise().query(` 
+		SELECT * FROM user WHERE email = '${email}'
+		`);
+
+    if (getData.length === 0) {
+      return res.status(400).json({ message: 'E-mail Not Found !!!' });
+    } else {
+      const dbRes = getData[0][0];
+      res.download('controller/images/image_user/' + dbRes.user_Image);
+    }
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+//Register Function
 exports.addUser = async (req, res) => {
   const schema = {
     id_user: 'number',
@@ -74,12 +88,29 @@ exports.addUser = async (req, res) => {
   }
 };
 
+//Login Function
+exports.login = async (req, res) => {
+  const { email, password } = req.body;
+
+  if (email === '' && password === '') return res.status(400).send('USER NOT FOUND!!!');
+
+  const [checkUser] = await connection.promise().query(`
+      SELECT * FROM user WHERE email = '${email}'
+  `);
+
+  if (checkUser.length === 0) return res.status(400).send('EMAIL FALSE');
+
+  if (checkUser[0].password !== password) return res.status(200).send('PASSWORD FALSE');
+
+  return res.status(200).send('TRUE');
+};
+
 //Reset password
 exports.checkEmail = async (req, res) => {
   const { username, email } = req.body;
 
   try {
-    const [checkUserEmail] = await connection.promise().query(`
+    const [checkUserEmail] = await connection.promise().query(` 
     SELECT * FROM user WHERE email = '${email}'
     `);
     if (checkUserEmail.length === 0) return res.status(400).json({ message: 'EMAIL FALSE' });
@@ -113,67 +144,23 @@ exports.updatePassword = async (req, res) => {
 
 //Function Update User [with PUT]
 exports.replaceData = async (req, res) => {
-  const id = req.params.id;
-  userID = await user.findByPk(id);
+  try {
+    console.log(req.body);
+    console.log(req.file.filename);
+    var imgsrc = 'http://127.0.0.1:3000/controller/images/image_user/' + req.file.fieldname;
+    const { username, email, password } = req.body;
+    const [checkUserEmail] = await connection.promise().query(` 
+		SELECT * FROM user WHERE email = '${email}'
+		`);
 
-  if (!userID) {
-    return res.json({ message: 'User Not Found!' });
+    userID = await connection.promise().query(`
+		UPDATE user
+		SET username='${username}', email='${email}',password='${password}', user_Image='${req.file.filename}'
+		WHERE email='${email}'
+		`);
+
+    return res.status(200).send('TRUE');
+  } catch (e) {
+    return res.status(400).send(e);
   }
-
-  const schema = {
-    username: 'string|optional',
-    email: 'string|optional',
-    password: 'string|optional',
-  };
-
-  const validate = valid.validate(req.body, schema);
-
-  if (validate.length) {
-    return res.status(400).json(validate);
-  }
-
-  userID = await userID.update(req.body);
-  res.json(userID);
-};
-
-//Function Show All User
-exports.showUser = async (req, res) => {
-  userID = await user.findAll();
-  return res.json(userID);
-};
-
-//Function Show User by ID
-exports.showUserByID = async (req, res) => {
-  const id = req.params.id;
-  const userID = await user.findByPk(id);
-  return res.json(userID || {});
-};
-
-exports.deleteUser = async (req, res) => {
-  const id = req.params.id;
-  userID = await user.findByPk(id);
-
-  if (!userID) {
-    return res.json({ message: 'User Not Found!' });
-  }
-
-  await userID.destroy();
-
-  res.json({ message: 'User was Deleted!' });
-};
-
-exports.login = async (req, res) => {
-  const { email, password } = req.body;
-
-  if (email === '' && password === '') return res.status(400).send('USER NOT FOUND!!!');
-
-  const [checkUser] = await connection.promise().query(`
-      SELECT * FROM user WHERE email = '${email}'
-  `);
-
-  if (checkUser.length === 0) return res.status(400).send('EMAIL FALSE');
-
-  if (checkUser[0].password !== password) return res.status(200).send('PASSWORD FALSE');
-
-  return res.status(200).send('TRUE');
 };

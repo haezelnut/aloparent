@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoalKelas.SoalC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBarKelas"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:progressDrawable="@drawable/costum_progress_bg_materikelas"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:max="100"
+            />
+
+        <LinearLayout
+            android:layout_marginHorizontal="30dp"
+            android:id="@+id/soala1"
+            android:visibility="visible"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewPertanyaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/soal1a"
+                android:textColor="#5B5B5B"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewPertanyaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/koper_image_soal1a" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/textViewPertanyaan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/soal1a"
+                android:textColor="#5B5B5B"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/radioGroupSoalA1"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/a1_opsi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:button="@drawable/radio_selector"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/a1_opsi2"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:button="@drawable/radio_selector"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/a1_opsi3"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:button="@drawable/radio_selector"/>
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/a1_opsi4"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:button="@drawable/radio_selector"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/liniarLayoutJawaban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/jawaban1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/white_rectangle_notifikasi"
+                        android:elevation="5dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#939393"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/jawaban2"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/white_rectangle_notifikasi"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#939393"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/jawaban3"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/white_rectangle_notifikasi"
+                        android:elevation="5dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#939393"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/jawaban4"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/white_rectangle_notifikasi"
+                        android:elevation="5dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#939393"
+                        android:layout_marginBottom="75dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_cek_soalA"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:text="Cek"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_rectangle_orange"
+            android:layout_marginBottom="55dp"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

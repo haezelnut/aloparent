@@ -3,96 +3,107 @@
     package="com.example.aloparent">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Aloparent">
+        android:theme="@style/Theme.Aloparent"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".UbahKataSandi"
+            android:name=".SoalKelas.SoalC"
             android:exported="false" />
         <activity
-            android:name=".LupaPasswordNext"
+            android:name=".SoalKelas.SoalB"
             android:exported="false" />
         <activity
-            android:name=".LupaPassword"
+            android:name=".SoalKelas.SoalA"
             android:exported="false" />
         <activity
-            android:name=".KonfirmasiJadwal"
+            android:name=".View.UbahKataSandi"
             android:exported="false" />
         <activity
-            android:name=".AhliKesehatan"
+            android:name=".View.LupaPasswordNext"
             android:exported="false" />
         <activity
-            android:name=".KonselingKesehatanActivity"
+            android:name=".View.LupaPassword"
             android:exported="false" />
         <activity
-            android:name=".PanduanOrangTuaScreen"
+            android:name=".View.KonfirmasiJadwal"
             android:exported="false" />
         <activity
-            android:name=".UpdateDataAnak"
+            android:name=".View.AhliKesehatan"
             android:exported="false" />
         <activity
-            android:name=".UpdateProfile"
+            android:name=".View.KonselingKesehatanActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileScreen"
-            android:exported="false"/>
-        <activity
-            android:name=".Notifikasi"
+            android:name=".View.PanduanOrangTuaScreen"
             android:exported="false" />
         <activity
-            android:name=".DataAnak"
+            android:name=".View.UpdateDataAnak"
             android:exported="false" />
         <activity
-            android:name=".favorite"
+            android:name=".View.UpdateProfile"
             android:exported="false" />
         <activity
-            android:name=".Edukasi"
+            android:name=".View.ProfileScreen"
             android:exported="false" />
         <activity
-            android:name=".Konseling"
+            android:name=".View.Notifikasi"
             android:exported="false" />
         <activity
-            android:name=".Kelas"
+            android:name=".View.DataAnak"
             android:exported="false" />
         <activity
-            android:name=".Artikel"
+            android:name=".View.favorite"
             android:exported="false" />
         <activity
-            android:name=".MediaPlayer"
+            android:name=".View.Edukasi"
             android:exported="false" />
         <activity
-            android:name=".VideoHariIni"
+            android:name=".View.Konseling"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".View.Kelas"
             android:exported="false" />
         <activity
-            android:name=".BerhasilDaftar"
+            android:name=".View.Artikel"
             android:exported="false" />
         <activity
-            android:name=".BerhasilLogin"
+            android:name=".View.MediaPlayer"
             android:exported="false" />
         <activity
-            android:name=".RegisterScreen"
+            android:name=".View.VideoHariIni"
             android:exported="false" />
         <activity
-            android:name=".LoginScreen"
+            android:name=".View.Home"
             android:exported="false" />
         <activity
-            android:name=".OnBoardingScreen"
+            android:name=".View.BerhasilDaftar"
             android:exported="false" />
         <activity
-            android:name=".UpdateKataSandi"
+            android:name=".View.BerhasilLogin"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".View.RegisterScreen"
+            android:exported="false" />
+        <activity
+            android:name=".View.LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".View.OnBoardingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".View.UpdateKataSandi"
+            android:exported="false" />
+        <activity
+            android:name=".View.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

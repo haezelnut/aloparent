@@ -5,25 +5,25 @@
     <item
         android:id="@+id/beranda"
         android:title="berandaa"
-        android:icon="@drawable/ic_hone"
+        android:icon="@drawable/home_selector"
         />
 
     <item
         android:id="@+id/kelas"
         android:title="Kelas"
-        android:icon="@drawable/ic_kelas_icon"
+        android:icon="@drawable/kelas_selector"
         />
 
     <item
         android:id="@+id/edukasi"
         android:title="Edukasi"
-        android:icon="@drawable/ic_edukasi_icon"
+        android:icon="@drawable/edukasi_selector"
         />
 
     <item
         android:id="@+id/konseling"
         android:title="Konseling"
-        android:icon="@drawable/ic_konseling"
+        android:icon="@drawable/konseling_selector"
         />
 
 </menu>

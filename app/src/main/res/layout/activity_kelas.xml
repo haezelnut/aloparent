@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Kelas">
+    tools:context=".View.Kelas">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:visibility="invisible"
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="10dp"
         android:background="@drawable/btn_rectangle_orange"
-        android:paddingVertical="5dp"
+        android:paddingVertical="6dp"
         android:layout_marginBottom="28dp"
-        app:itemIconSize="30dp"
+        app:itemIconSize="34dp"
         app:itemIconTint="@drawable/navbar_selector"
         app:itemTextColor="@drawable/navbar_selector"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,6 +138,7 @@
                 >
 
                 <ProgressBar
+                    android:id="@+id/progressPencapaian"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="15dp"
                     android:layout_width="match_parent"
@@ -147,6 +147,7 @@
                     style="@android:style/Widget.ProgressBar.Horizontal"
                     android:layout_marginHorizontal="30dp"
                     android:minWidth="5dp"
+                    android:max="300"
                     app:indicatorColor="@color/white"
                    android:progressDrawable="@drawable/costum_progress_bg"
                    />
@@ -157,7 +158,7 @@
                     android:id="@+id/jumlah_pencapaian"
                     android:layout_width="match_parent"
                     android:layout_height="15dp"
-                    android:text="5 / 16 pencapaian"
+                    android:text="0 / 12 pencapaian"
                     android:fontFamily="@font/poppins_regular"
                     android:textSize="13dp"
                     android:textColor="@color/white"
@@ -202,7 +203,7 @@
                     android:layout_height="54dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/foto_profil_lesti" />
+                    android:src="@drawable/icon_pembelajaran1" />
 
                 <TextView
                     android:id="@+id/tanggalPemblajaran1"
@@ -212,26 +213,25 @@
                     android:layout_marginTop="13dp"
                     android:layout_toRightOf="@+id/icom_materi1"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="24 mei 2022"
+                    android:text="Pembelajaran 1"
                     android:textColor="@color/white"
                     android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/jumlah_soal_1"
-                    android:gravity="center"
-                    android:textSize="15dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="10 Soal"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_below="@id/tanggalPemblajaran1"
                     android:layout_width="90dp"
                     android:layout_height="21dp"
-                    android:background="@drawable/white_rectangle_notifikasi"
+                    android:layout_below="@id/tanggalPemblajaran1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_toRightOf="@id/icom_materi1"
+                    android:background="@drawable/white_rectangle_notifikasi"
                     android:backgroundTint="#6BBDED"
-                    />
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="4 Soal"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
 
                 <ImageView
                     android:layout_width="30dp"
@@ -255,9 +255,167 @@
                     app:indicatorColor="@color/white" />
 
                 <TextView
+                    android:id="@+id/textPembelajran1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/progess_pembelajaran_1"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="20dp"
-                    android:layout_below="@id/progess_pembelajaran_1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="0 / 4 soal dikerjakan"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="toPembelajaran2"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle_orange"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icom_materi2"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/icon_pembelajaran2" />
+
+                <TextView
+                    android:id="@+id/tanggalPemblajaran2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/icom_materi2"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Pembelajaran 2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/jumlah_soal_2"
+                    android:layout_width="90dp"
+                    android:layout_height="21dp"
+                    android:layout_below="@id/tanggalPemblajaran2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/icom_materi2"
+                    android:background="@drawable/white_rectangle_notifikasi"
+                    android:backgroundTint="#6BBDED"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="4 Soal"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_lock_open_24" />
+
+                <ProgressBar
+                    android:id="@+id/progess_pembelajaran_2"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/jumlah_soal_2"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:minWidth="5dp"
+                    android:progressDrawable="@drawable/costum_progress_bg_pembelajaran"
+                    app:indicatorColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textPembelajran2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@id/progess_pembelajaran_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:text="0 / 4 soal dikerjakan"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="13dp"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="kePembelajaran3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle_orange"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icom_materi3"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/icon_pembelajaran3" />
+
+                <TextView
+                    android:id="@+id/tanggalPemblajaran3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/icom_materi3"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Pembelajaran 3"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/jumlah_soal_3"
+                    android:layout_width="90dp"
+                    android:layout_height="21dp"
+                    android:layout_below="@id/tanggalPemblajaran3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/icom_materi3"
+                    android:background="@drawable/white_rectangle_notifikasi"
+                    android:backgroundTint="#6BBDED"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="4 Soal"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_lock_open_24" />
+
+                <ProgressBar
+                    android:id="@+id/progess_pembelajaran_3"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/jumlah_soal_3"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:minWidth="5dp"
+                    android:progressDrawable="@drawable/costum_progress_bg_pembelajaran"
+                    app:indicatorColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textPembelajran3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@id/progess_pembelajaran_3"
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
                     android:text="0 / 4 soal dikerjakan"

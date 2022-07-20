@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Edukasi">
+    tools:context=".View.Edukasi">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -14,9 +14,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="10dp"
         android:background="@drawable/btn_rectangle_orange"
-        android:paddingVertical="5dp"
+        android:paddingVertical="6dp"
         android:layout_marginBottom="28dp"
-        app:itemIconSize="30dp"
+        app:itemIconSize="34dp"
         app:itemIconTint="@drawable/navbar_selector"
         app:itemTextColor="@drawable/navbar_selector"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,6 +94,7 @@
                     android:textAlignment="textStart"
                     android:textDirection="ltr"
                     />
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"

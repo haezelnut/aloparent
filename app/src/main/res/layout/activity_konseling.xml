@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Konseling">
+    tools:context=".View.Konseling">
 
 
    <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -15,9 +15,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="10dp"
         android:background="@drawable/btn_rectangle_orange"
-        android:paddingVertical="5dp"
+        android:paddingVertical="6dp"
         android:layout_marginBottom="28dp"
-        app:itemIconSize="30dp"
+        app:itemIconSize="34dp"
         app:itemIconTint="@drawable/navbar_selector"
         app:itemTextColor="@drawable/navbar_selector"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -277,7 +277,6 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_marginTop="20dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -285,6 +284,7 @@
                 android:layout_columnWeight="1">
 
                 <LinearLayout
+                    android:layout_marginTop="20dp"
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
@@ -318,7 +318,6 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_marginTop="20dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -326,6 +325,7 @@
                 android:layout_columnWeight="1">
 
                 <LinearLayout
+                    android:layout_marginTop="14dp"
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"

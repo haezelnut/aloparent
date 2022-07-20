@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2022 at 10:08 AM
+-- Generation Time: Jul 18, 2022 at 07:27 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -98,6 +98,7 @@ CREATE TABLE `user` (
   `username` text NOT NULL,
   `email` text NOT NULL,
   `password` text NOT NULL,
+  `user_Image` text DEFAULT NULL,
   `createdAt` date NOT NULL,
   `updatedAt` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -106,10 +107,13 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_user`, `username`, `email`, `password`, `createdAt`, `updatedAt`) VALUES
-(547241062, 'x', 'x', 'x', '2022-06-17', '2022-06-17'),
-(972073416, 'Arsenius Purbandono ', 'xzars@upi.edu', 'Qwerty009', '2022-06-18', '2022-06-18'),
-(975154752, 'A', 'A', 'A', '2022-06-16', '2022-06-16');
+INSERT INTO `user` (`id_user`, `username`, `email`, `password`, `user_Image`, `createdAt`, `updatedAt`) VALUES
+(408563769, 'Arsenius', '12345', '12345678', 'user_Image_1658141324552.jpg', '2022-06-22', '2022-06-22'),
+(449944798, 'pimpom', 'pimpom@gmail.com', '00912345', 'user_Image_1658137304392.jpg', '2022-06-23', '2022-06-23'),
+(547241062, 'x', 'x', 'x', 'user_Image_1657602775581.jpg', '2022-06-17', '2022-06-17'),
+(878411655, 'xzars', 'xzars009@upi.edu', 'Qwerty009', 'user_Image_1657602775581.jpg', '2022-06-23', '2022-06-23'),
+(972073416, 'Alfred Schmidt', 'xzars@upi.edu', 'Arsen009123', 'user_Image_1657602775581.jpg', '2022-06-18', '2022-06-18'),
+(975154752, 'ABC12345', 'A', '12345', 'user_Image_1657776388451.jpg', '2022-06-16', '2022-06-16');
 
 -- --------------------------------------------------------
 
