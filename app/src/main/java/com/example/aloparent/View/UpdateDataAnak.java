@@ -8,6 +8,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -82,10 +83,16 @@ public class UpdateDataAnak extends AppCompatActivity {
 
                 // merubah tampilan home 1 ke home 2 setelah data anak diimput
 
-                Home.inputDataAnak.setVisibility(View.GONE);
+               /* Home.inputDataAnak.setVisibility(View.GONE);
                 Home.dataAnak.setVisibility(View.VISIBLE);
                 Home.layout1.setVisibility(View.GONE);
-                Home.layout2.setVisibility(View.VISIBLE);
+                Home.layout2.setVisibility(View.VISIBLE); */
+
+                int dataAnak = 1;
+                SharedPreferences mPrefs = getSharedPreferences("simpanDataAnak", 0);
+                SharedPreferences.Editor editor = mPrefs.edit();
+                editor.putInt("DATA_ANAK", dataAnak);
+                editor.commit();
 
                 openBerhasilSimpan();
             }

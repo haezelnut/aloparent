@@ -161,10 +161,12 @@
                         android:layout_height="match_parent">
 
                         <SeekBar
+                            android:id="@+id/homeSeekbar"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_above="@id/nama_anak"
                             android:layout_marginHorizontal="15dp"
+                            android:max="300"
                             android:minWidth="5dp"
                             android:progressDrawable="@drawable/seek_bar"
                             android:thumb="@drawable/icon_progress_bar_boy" />

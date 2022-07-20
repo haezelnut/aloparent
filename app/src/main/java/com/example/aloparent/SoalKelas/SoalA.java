@@ -5,11 +5,13 @@ import androidx.appcompat.widget.AppCompatRadioButton;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -341,6 +343,11 @@ public class SoalA extends AppCompatActivity {
                     Btn_oke.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            int progressA = 100;
+                            SharedPreferences mPrefs = getSharedPreferences("IDvalue", 0);
+                            SharedPreferences.Editor editor = mPrefs.edit();
+                            editor.putInt("progressA", progressA);
+                            editor.commit();
                             Intent intent = new Intent(SoalA.this, Kelas.class);
                             startActivity(intent);
                         }

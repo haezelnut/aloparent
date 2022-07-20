@@ -138,6 +138,7 @@
                 >
 
                 <ProgressBar
+                    android:id="@+id/progressPencapaian"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="15dp"
                     android:layout_width="match_parent"
@@ -146,6 +147,7 @@
                     style="@android:style/Widget.ProgressBar.Horizontal"
                     android:layout_marginHorizontal="30dp"
                     android:minWidth="5dp"
+                    android:max="300"
                     app:indicatorColor="@color/white"
                    android:progressDrawable="@drawable/costum_progress_bg"
                    />
@@ -253,16 +255,16 @@
                     app:indicatorColor="@color/white" />
 
                 <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_below="@id/progess_pembelajaran_1"
+                    android:id="@+id/textPembelajran1"
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
-                    android:text="0 / 4 soal dikerjakan"
+                    android:layout_below="@id/progess_pembelajaran_1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:textSize="13dp"
+                    android:text="0 / 4 soal dikerjakan"
                     android:textColor="@color/white"
-                    />
+                    android:textSize="13dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -331,6 +333,7 @@
                     app:indicatorColor="@color/white" />
 
                 <TextView
+                    android:id="@+id/textPembelajran2"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_below="@id/progess_pembelajaran_2"
@@ -409,6 +412,7 @@
                     app:indicatorColor="@color/white" />
 
                 <TextView
+                    android:id="@+id/textPembelajran3"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_below="@id/progess_pembelajaran_3"

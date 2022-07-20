@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -28,6 +30,8 @@ public class Home extends AppCompatActivity {
     public static LinearLayout layout1;
     public static LinearLayout layout2;
     public static RelativeLayout dataAnak;
+
+    SeekBar homeSeekbar;
 
     // tekan back navbar 2 kali untuk keluar aplikasi
 
@@ -134,8 +138,41 @@ public class Home extends AppCompatActivity {
 
         imageSlider.setImageList(slideModels,true);
 
+        homeSeekbar = findViewById(R.id.homeSeekbar);
+        homeSeekbar.setEnabled(false);
 
-       bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        int totalSeekbar = 0;
+
+        SharedPreferences mPrefs = getSharedPreferences("IDvalue",0);
+        int progressLiniearA = mPrefs.getInt("progressA", 0);
+
+        totalSeekbar += progressLiniearA;
+
+        SharedPreferences mPrefs2 = getSharedPreferences("IDvalue2",0);
+        int progressLiniearB = mPrefs2.getInt("progressB", 0);
+
+        totalSeekbar += progressLiniearB;
+
+        SharedPreferences mPrefs3 = getSharedPreferences("IDvalue3",0);
+        int progressLiniearC = mPrefs3.getInt("progressC", 0);
+
+        totalSeekbar += progressLiniearC;
+
+        homeSeekbar.setProgress(totalSeekbar);
+
+        SharedPreferences simpanDataAnak = getSharedPreferences("simpanDataAnak",0);
+       int data_Anak = simpanDataAnak.getInt("DATA_ANAK",0 );
+
+       if (data_Anak == 1){
+            inputDataAnak.setVisibility(View.GONE);
+            dataAnak.setVisibility(View.VISIBLE);
+            layout1.setVisibility(View.GONE);
+            layout2.setVisibility(View.VISIBLE);
+        }
+
+
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -163,9 +200,9 @@ public class Home extends AppCompatActivity {
 
         // jika belum ada yang login maka akan kembali ke scren login
        final SharedPrefManager prefManager = new SharedPrefManager(this);
-       if (!prefManager.IsUserLoggedIn()){
+       /*if (!prefManager.IsUserLoggedIn()){
            backToLogin();
-       }
+       }*/
 
 
     }

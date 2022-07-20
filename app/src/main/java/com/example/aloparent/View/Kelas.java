@@ -6,14 +6,18 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.aloparent.R;
@@ -25,6 +29,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class Kelas extends AppCompatActivity {
 
     Dialog dialog;
+    ProgressBar kelasA, kelasB, kelasC, pencapaianHariIni;
+    TextView txtPembelajaran1, txtPembelajaran2, txtPembelajaran3, jumlahPencapaian;
 
     // tekan back navbar 2 kali untuk keluar aplikasi
 
@@ -145,6 +151,55 @@ public class Kelas extends AppCompatActivity {
         bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setSelectedItemId(R.id.kelas);
 
+        kelasA = findViewById(R.id.progess_pembelajaran_1);
+        kelasB = findViewById(R.id.progess_pembelajaran_2);
+        kelasC = findViewById(R.id.progess_pembelajaran_3);
+        pencapaianHariIni = findViewById(R.id.progressPencapaian);
+
+        txtPembelajaran1 = findViewById(R.id.textPembelajran1);
+        txtPembelajaran2 = findViewById(R.id.textPembelajran2);
+        txtPembelajaran3 = findViewById(R.id.textPembelajran3);
+        jumlahPencapaian = findViewById(R.id.jumlah_pencapaian);
+
+
+        int pembelajaranHariIni=0;
+
+        SharedPreferences mPrefs = getSharedPreferences("IDvalue",0);
+        int progressLiniearA = mPrefs.getInt("progressA", 0);
+        kelasA.setProgress(progressLiniearA);
+        pembelajaranHariIni +=progressLiniearA;
+
+       SharedPreferences mPrefs2 = getSharedPreferences("IDvalue2",0);
+       int progressLiniearB = mPrefs2.getInt("progressB", 0);
+       kelasB.setProgress(progressLiniearB);
+       pembelajaranHariIni +=progressLiniearB;
+
+        SharedPreferences mPrefs3 = getSharedPreferences("IDvalue3",0);
+        int progressLiniearC = mPrefs3.getInt("progressC", 0);
+        kelasC.setProgress(progressLiniearC);
+        pembelajaranHariIni +=progressLiniearC;
+
+        pencapaianHariIni.setProgress(pembelajaranHariIni);
+
+        if (progressLiniearA == 100){
+            txtPembelajaran1.setText("4 / 4 soal dikerjakan");
+        }
+
+        if (progressLiniearB == 100){
+            txtPembelajaran2.setText("4 / 4 soal dikerjakan");
+        }
+
+        if (progressLiniearC == 100){
+            txtPembelajaran3.setText("4 / 4 soal dikerjakan");
+        }
+
+        if (pembelajaranHariIni == 100){
+            jumlahPencapaian.setText("4 / 12 pencapaian");
+        }else if (pembelajaranHariIni == 200){
+            jumlahPencapaian.setText("8 / 12 pencapaian");
+        }else if (pembelajaranHariIni == 300){
+            jumlahPencapaian.setText("12 / 12 pencapaian");
+        }
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
