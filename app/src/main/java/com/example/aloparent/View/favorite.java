@@ -19,6 +19,14 @@ public class favorite extends AppCompatActivity {
         Intent intent = new Intent(favorite.this, Home.class);
         startActivity(intent);
     }
+    public void toArtikel(View v){
+        Intent intent = new Intent(favorite.this, Artikel.class);
+        startActivity(intent);
+    }
+    public void toVideo(View v){
+        Intent intent = new Intent(favorite.this, VideoHariIni.class);
+        startActivity(intent);
+    }
 
 
     @Override

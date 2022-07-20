@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.aloparent.Artikel.Artikel2;
+import com.example.aloparent.Artikel.Artikel4;
 import com.example.aloparent.R;
 import com.example.aloparent.SharedRefrence.SharedPrefManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -75,6 +77,18 @@ public class Home extends AppCompatActivity {
     //imtemt ke halaman artikel
     public void allArticel(View v){
         Intent intent = new Intent(Home.this, Artikel.class);
+        startActivity(intent);
+    }
+
+    //imtemt ke halaman artikel 4
+    public void artikel4(View v){
+        Intent intent = new Intent(Home.this, Artikel4.class);
+        startActivity(intent);
+    }
+
+    //imtemt ke halaman artikel 2
+    public void artikel2(View v){
+        Intent intent = new Intent(Home.this, Artikel2.class);
         startActivity(intent);
     }
 

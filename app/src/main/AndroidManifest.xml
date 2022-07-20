@@ -16,6 +16,21 @@
         android:theme="@style/Theme.Aloparent"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Artikel4"
+            android:exported="false" />
+        <activity
+            android:name=".Artikel3"
+            android:exported="false" />
+        <activity
+            android:name=".Artikel2"
+            android:exported="false" />
+        <activity
+            android:name=".Artikel1"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelOne"
+            android:exported="false" />
+        <activity
             android:name=".SoalKelas.SoalC"
             android:exported="false" />
         <activity

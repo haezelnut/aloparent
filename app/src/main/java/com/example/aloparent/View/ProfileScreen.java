@@ -21,6 +21,7 @@ public class ProfileScreen extends AppCompatActivity {
     }
 
     public void btnEdit(View v){
+        finish();
         Intent intent = new Intent(ProfileScreen.this, UpdateProfile.class);
         startActivity(intent);
     }
@@ -57,5 +58,12 @@ public class ProfileScreen extends AppCompatActivity {
                 .centerCrop()
                 .into(profile_picture);
 
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        Intent previewMessage = new Intent(ProfileScreen.this, ProfileScreen.class);
+        this.finish();
     }
 }

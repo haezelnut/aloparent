@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.aloparent.Artikel.Artikel1;
 import com.example.aloparent.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -45,6 +47,25 @@ public class Edukasi extends AppCompatActivity {
         }, 2000);
     }
 
+    public void toVideo(View v){
+        Intent intent = new Intent(Edukasi.this, VideoHariIni.class);
+        startActivity(intent);
+    }
+
+    public void artikel1(View v){
+        Intent intent = new Intent(Edukasi.this, Artikel1.class);
+        startActivity(intent);
+    }
+
+    public void artikel2(View v){
+        Intent intent = new Intent(Edukasi.this, Artikel2.class);
+        startActivity(intent);
+    }
+
+    public void artikel3(View v){
+        Intent intent = new Intent(Edukasi.this, Artikel3.class);
+        startActivity(intent);
+    }
 
 
 

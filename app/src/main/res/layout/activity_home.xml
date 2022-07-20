@@ -341,13 +341,14 @@
                                 android:layout_height="160dp"
                                 android:layout_marginLeft="30dp"
                                 android:layout_marginTop="10dp"
+                                android:onClick="artikel4"
                                 android:background="@drawable/btn_ractangle"
                                 android:elevation="10dp">
 
                                 <com.google.android.material.imageview.ShapeableImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/artikel_untuk_mama"
+                                    android:src="@drawable/artikel_4"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
                                 <View
@@ -362,7 +363,7 @@
                                     android:fontFamily="@font/poppins_semibold"
                                     android:gravity="bottom"
                                     android:padding="19dp"
-                                    android:text="Agar di usia 3 Tahun cerdas, yuk biasakan ini dirumah"
+                                    android:text="Inilah 5 Tips Agar Si Kecil Berani Tidur Sendirian"
                                     android:textColor="@color/white"
                                     android:textSize="13dp" />
 
@@ -373,6 +374,7 @@
                                 style="@style/roundImageView"
                                 android:layout_width="180dp"
                                 android:layout_height="160dp"
+                                android:onClick="artikel2"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="30dp"
@@ -382,7 +384,7 @@
                                 <com.google.android.material.imageview.ShapeableImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/artikel_untuk_mama"
+                                    android:src="@drawable/artikel_2"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
 
@@ -393,7 +395,7 @@
                                     android:fontFamily="@font/poppins_semibold"
                                     android:gravity="bottom"
                                     android:padding="19dp"
-                                    android:text="Pilih mainan yang tepat untuk tumbuh kembang anak"
+                                    android:text="Apa yang Dimaksud dengan Slow Parenting?"
                                     android:textColor="@color/white"
                                     android:textSize="13dp" />
 
