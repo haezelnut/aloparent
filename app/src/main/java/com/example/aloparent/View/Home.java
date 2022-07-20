@@ -200,9 +200,9 @@ public class Home extends AppCompatActivity {
 
         // jika belum ada yang login maka akan kembali ke scren login
        final SharedPrefManager prefManager = new SharedPrefManager(this);
-       /*if (!prefManager.IsUserLoggedIn()){
+       if (!prefManager.IsUserLoggedIn()){
            backToLogin();
-       }*/
+       }
 
 
     }
