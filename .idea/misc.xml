@@ -25,7 +25,10 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/blue_rectangle_notifikasi.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/btn_back.xml" value="0.19" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/btn_rectangle_blue.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/btn_rectangle_orange.xml" value="0.19" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/costum_progress_bg.xml" value="0.19" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/costum_progress_bg_pembelajaran.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/dot_selected.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/dot_unselected.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_arrowback.xml" value="0.19" />
@@ -33,6 +36,7 @@
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_edit.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_play.xml" value="0.1" />
+        <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/ic_visibility_off.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/rectangle_edittext.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/drawable/white_rectangle_notifikasi.xml" value="0.19" />
         <entry key="..\:/KampurMerdeka/aloparent/app/src/main/res/layout/activity_ahli_kesehatan.xml" value="0.17074275362318841" />
