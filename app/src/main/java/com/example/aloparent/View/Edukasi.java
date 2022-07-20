@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.aloparent.Artikel.Artikel1;
+import com.example.aloparent.Artikel.Artikel2;
+import com.example.aloparent.Artikel.Artikel3;
 import com.example.aloparent.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 

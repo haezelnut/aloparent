@@ -21,16 +21,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.aloparent.R;
+import com.example.aloparent.SharedRefrence.SharedPrefManager;
+import com.example.aloparent.SharedRefrence.UserModel;
 import com.example.aloparent.SoalKelas.SoalA;
 import com.example.aloparent.SoalKelas.SoalB;
 import com.example.aloparent.SoalKelas.SoalC;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Kelas extends AppCompatActivity {
 
-    Dialog dialog;
-    ProgressBar kelasA, kelasB, kelasC, pencapaianHariIni;
-    TextView txtPembelajaran1, txtPembelajaran2, txtPembelajaran3, jumlahPencapaian;
+    private Dialog dialog;
+    private ProgressBar kelasA, kelasB, kelasC, pencapaianHariIni;
+    private TextView txtPembelajaran1, txtPembelajaran2, txtPembelajaran3, jumlahPencapaian, tv_UserName;
+    private CircleImageView foto_profil_anak;
 
     // tekan back navbar 2 kali untuk keluar aplikasi
 
@@ -160,7 +166,19 @@ public class Kelas extends AppCompatActivity {
         txtPembelajaran2 = findViewById(R.id.textPembelajran2);
         txtPembelajaran3 = findViewById(R.id.textPembelajran3);
         jumlahPencapaian = findViewById(R.id.jumlah_pencapaian);
+        tv_UserName = findViewById(R.id.tv_UserName);
+        foto_profil_anak = findViewById(R.id.foto_profil_anak);
 
+        //Get User Data From SharedPref
+        final SharedPrefManager prefManager = new SharedPrefManager(this);
+        UserModel user = prefManager.getUserLogin();
+        String email = user.getUserMail(), username = user.getUserName(), password = user.getUserPassword(), image = user.getUserImage();
+        tv_UserName.setText(username);
+        Picasso.get()
+                .load("http://192.168.43.247:3000/users/userImage/"+email)
+                .fit()
+                .centerCrop()
+                .into(foto_profil_anak);
 
         int pembelajaranHariIni=0;
 

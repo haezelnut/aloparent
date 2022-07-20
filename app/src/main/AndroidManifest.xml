@@ -16,19 +16,16 @@
         android:theme="@style/Theme.Aloparent"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Artikel4"
+            android:name=".Artikel.Artikel4"
             android:exported="false" />
         <activity
-            android:name=".Artikel3"
+            android:name=".Artikel.Artikel3"
             android:exported="false" />
         <activity
-            android:name=".Artikel2"
+            android:name=".Artikel.Artikel2"
             android:exported="false" />
         <activity
-            android:name=".Artikel1"
-            android:exported="false" />
-        <activity
-            android:name=".ArtikelOne"
+            android:name=".Artikel.Artikel1"
             android:exported="false" />
         <activity
             android:name=".SoalKelas.SoalC"

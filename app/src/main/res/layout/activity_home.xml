@@ -51,6 +51,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/tv_UserName"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/foto_profil_orangtua"
@@ -341,7 +342,6 @@
                                 android:layout_height="160dp"
                                 android:layout_marginLeft="30dp"
                                 android:layout_marginTop="10dp"
-                                android:onClick="artikel4"
                                 android:background="@drawable/btn_ractangle"
                                 android:elevation="10dp">
 
@@ -349,6 +349,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:src="@drawable/artikel_4"
+                                    android:onClick="artikel4"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
                                 <View
@@ -374,7 +375,6 @@
                                 style="@style/roundImageView"
                                 android:layout_width="180dp"
                                 android:layout_height="160dp"
-                                android:onClick="artikel2"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="30dp"
@@ -384,6 +384,7 @@
                                 <com.google.android.material.imageview.ShapeableImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:onClick="artikelHome2"
                                     android:src="@drawable/artikel_2"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
