@@ -1,33 +1,20 @@
 package com.example.aloparent.View;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.aloparent.R;
 import com.example.aloparent.SharedRefrence.SharedPrefManager;
 import com.example.aloparent.SharedRefrence.UserModel;
+import com.squareup.picasso.Picasso;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileScreen extends AppCompatActivity {
 
     private TextView inputNamaOrangTua, inputEmailLogin, kataSandi;
-    private ImageView profile_picture;
-    private String email;
-
+    private CircleImageView profile_picture;
     public void backFormProfile(View v){
         Intent intent = new Intent(ProfileScreen.this, Home.class);
         startActivity(intent);
@@ -64,6 +51,11 @@ public class ProfileScreen extends AppCompatActivity {
         inputNamaOrangTua.setText(username);
         inputEmailLogin.setText(email);
         kataSandi.setText(password);
+        Picasso.get()
+                .load("http://192.168.43.247:3000/users/userImage/"+email)
+                .fit()
+                .centerCrop()
+                .into(profile_picture);
 
     }
 }

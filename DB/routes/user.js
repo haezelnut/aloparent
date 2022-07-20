@@ -15,5 +15,6 @@ router.post('/check', userFunction.checkEmail);
 
 router.post('/reset', userFunction.updatePassword);
 
+router.get('/userImage/:email', userFunction.getImage);
 
 module.exports = router;
