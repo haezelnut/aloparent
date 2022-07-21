@@ -135,6 +135,7 @@ public class RegisterScreen extends AppCompatActivity {
             object.put("username", temp_username);
             object.put("email", temp_email);
             object.put("password", temp_Password);
+            object.put("user_Image", "profile_pic.jpg");
 
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
                 @Override

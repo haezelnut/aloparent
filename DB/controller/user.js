@@ -61,9 +61,10 @@ exports.addUser = async (req, res) => {
     username: 'string',
     email: 'string',
     password: 'string',
+	user_Image: 'string'
   };
 
-  const { id_user, username, email, password } = req.body;
+  const { id_user, username, email, password, user_Image } = req.body;
 
   const validate = valid.validate(req.body, schema);
 

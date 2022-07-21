@@ -13,16 +13,23 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.aloparent.Artikel.Artikel2;
+import com.example.aloparent.Artikel.Artikel4;
 import com.example.aloparent.R;
 import com.example.aloparent.SharedRefrence.SharedPrefManager;
+import com.example.aloparent.SharedRefrence.UserModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Home extends AppCompatActivity {
 
@@ -30,6 +37,8 @@ public class Home extends AppCompatActivity {
     public static LinearLayout layout1;
     public static LinearLayout layout2;
     public static RelativeLayout dataAnak;
+    private CircleImageView foto_profil_orangtua;
+    private TextView tv_UserName;
 
     SeekBar homeSeekbar;
 
@@ -75,6 +84,18 @@ public class Home extends AppCompatActivity {
     //imtemt ke halaman artikel
     public void allArticel(View v){
         Intent intent = new Intent(Home.this, Artikel.class);
+        startActivity(intent);
+    }
+
+    //imtemt ke halaman artikel 4
+    public void artikel4(View v){
+        Intent intent = new Intent(Home.this, Artikel4.class);
+        startActivity(intent);
+    }
+
+    //imtemt ke halaman artikel 2
+    public void artikelHome2(View v){
+        Intent intent = new Intent(Home.this, Artikel2.class);
         startActivity(intent);
     }
 
@@ -127,6 +148,19 @@ public class Home extends AppCompatActivity {
         layout1 = (LinearLayout) findViewById(R.id.linearLayout1);
         dataAnak = (RelativeLayout) findViewById(R.id.data_anak);
         layout2 = (LinearLayout) findViewById(R.id.linierlayout2);
+        foto_profil_orangtua = findViewById(R.id.foto_profil_orangtua);
+        tv_UserName = findViewById(R.id.tv_UserName);
+
+        //Get User Data From SharedPref
+        final SharedPrefManager prefManager = new SharedPrefManager(this);
+        UserModel user = prefManager.getUserLogin();
+        String email = user.getUserMail(), username = user.getUserName(), password = user.getUserPassword(), image = user.getUserImage();
+        tv_UserName.setText(username);
+        Picasso.get()
+                .load("http://192.168.43.247:3000/users/userImage/"+email)
+                .fit()
+                .centerCrop()
+                .into(foto_profil_orangtua);
 
         ImageSlider imageSlider = findViewById(R.id.view_pager1);
 
@@ -197,9 +231,6 @@ public class Home extends AppCompatActivity {
             }
         });
 
-
-        // jika belum ada yang login maka akan kembali ke scren login
-       final SharedPrefManager prefManager = new SharedPrefManager(this);
        if (!prefManager.IsUserLoggedIn()){
            backToLogin();
        }

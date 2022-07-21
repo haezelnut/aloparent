@@ -16,11 +16,13 @@ public class VideoHariIni extends AppCompatActivity {
         startActivity(intent);
     }
 
-    YouTubePlayerView video_player;
+    YouTubePlayerView youtube_player_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_hari_ini);
+
+        youtube_player_view = findViewById(R.id.youtube_player_view);
     }
 }

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Artikel.Artikel3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:onClick="backButton"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_btn"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Pola Asuh Anak yang Tepat untuk Balita"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/artikel_3"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Bagi para orangtua, sebaiknya hindari kebiasaan tidak mau mendengarkan pendapat anak. Terkadang saat anak melakukan suatu kesalahan, orangtua tanpa sengaja menyalahkan anak atas apa yang terjadi pada dirinya. Kondisi ini diperparah dengan kebiasaan orangtua yang kurang mau menerima atau mendengar alasan dan pendapat anak mengenai hal yang telah terjadi."
+            android:layout_marginHorizontal="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Mendengarkan pendapat anak-anak sama pentingnya untuk memenuhi kebutuhan emosional anak. Dilansir dari Psychology Today, orangtua harus mampu mengajarkan anak cara mengekspresikan perasaannya yang juga nantinya bermanfaat pada kehidupannya. Orangtua yang mendengarkan anaknya juga mengajarkan cara berkomunikasi yang baik sehingga anak mampu memiliki hubungan baik dalam keluarga maupun lingkungan sosial."
+            android:layout_marginHorizontal="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hindari Abaikan Pendapat Anak"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/textcolor_black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Banyak orangtua yang kerap tidak mendengarkan pendapat anaknya. Padahal, mendengarkan dan didengarkan dengan baik menjadi salah satu ciri komunikasi yang baik antara anak dan orangtua. Dengan begitu, proses komunikasi berjalan dengan baik dan mengurangi risiko salah paham antara anak dan orangtua. Lalu, bagaimana orangtua tidak pernah mau mendengarkan pendapat anak? Kondisi ini menyebabkan komunikasi antara orangtua dan anak hanya menjadi satu arah. Jika kebiasaan ini terus-menerus dilakukan oleh orangtua, bukan tidak mungkin hal ini berdampak negatif pada emosional anak. "
+            android:layout_marginHorizontal="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengajari anak makan menggunakan tangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginRight="40dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="20dp"
+            android:text="Langkah pertama, kamu bisa memberikan makanan yang dapat anak genggam, misalnya buah-buahan. Kemudian, bantu mereka memotong makanannya sebelum disuap ke mulut. Setelahnya bisa mengajari mereka menggunakan sendok dan garpu, lalu latih mereka memotong makanannya sendiri. Tapi, tetap dampingi anak saat makan ya."
+            android:layout_marginHorizontal="55dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengajari anak makan menggunakan tangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginRight="40dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="20dp"
+            android:text="Langkah pertama, kamu bisa memberikan makanan yang dapat anak genggam, misalnya buah-buahan. Kemudian, bantu mereka memotong makanannya sebelum disuap ke mulut. Setelahnya bisa mengajari mereka menggunakan sendok dan garpu, lalu latih mereka memotong makanannya sendiri. Tapi, tetap dampingi anak saat makan ya."
+            android:layout_marginHorizontal="55dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengajari anak makan menggunakan tangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/textcolor_black"
+                android:layout_marginRight="40dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="20dp"
+            android:text="Langkah pertama, kamu bisa memberikan makanan yang dapat anak genggam, misalnya buah-buahan. Kemudian, bantu mereka memotong makanannya sebelum disuap ke mulut. Setelahnya bisa mengajari mereka menggunakan sendok dan garpu, lalu latih mereka memotong makanannya sendiri. Tapi, tetap dampingi anak saat makan ya."
+            android:layout_marginHorizontal="55dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle_orange"
+            android:text="Selesai"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="30dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

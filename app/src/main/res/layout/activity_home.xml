@@ -51,6 +51,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/tv_UserName"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/foto_profil_orangtua"
@@ -347,7 +348,8 @@
                                 <com.google.android.material.imageview.ShapeableImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/artikel_untuk_mama"
+                                    android:src="@drawable/artikel_4"
+                                    android:onClick="artikel4"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
                                 <View
@@ -362,7 +364,7 @@
                                     android:fontFamily="@font/poppins_semibold"
                                     android:gravity="bottom"
                                     android:padding="19dp"
-                                    android:text="Agar di usia 3 Tahun cerdas, yuk biasakan ini dirumah"
+                                    android:text="Inilah 5 Tips Agar Si Kecil Berani Tidur Sendirian"
                                     android:textColor="@color/white"
                                     android:textSize="13dp" />
 
@@ -382,7 +384,8 @@
                                 <com.google.android.material.imageview.ShapeableImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/artikel_untuk_mama"
+                                    android:onClick="artikelHome2"
+                                    android:src="@drawable/artikel_2"
                                     app:shapeAppearanceOverlay="@style/roundImageView" />
 
 
@@ -393,7 +396,7 @@
                                     android:fontFamily="@font/poppins_semibold"
                                     android:gravity="bottom"
                                     android:padding="19dp"
-                                    android:text="Pilih mainan yang tepat untuk tumbuh kembang anak"
+                                    android:text="Apa yang Dimaksud dengan Slow Parenting?"
                                     android:textColor="@color/white"
                                     android:textSize="13dp" />
 

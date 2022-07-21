@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Artikel.Artikel1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_btn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Sering Abaikan Pendapat Anak, Ini Bahaya yang Bisa Terjadi"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/artikel_1"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Bagi para orangtua, sebaiknya hindari kebiasaan tidak mau mendengarkan pendapat anak. Terkadang saat anak melakukan suatu kesalahan, orangtua tanpa sengaja menyalahkan anak atas apa yang terjadi pada dirinya. Kondisi ini diperparah dengan kebiasaan orangtua yang kurang mau menerima atau mendengar alasan dan pendapat anak mengenai hal yang telah terjadi."
+            android:layout_marginHorizontal="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Mendengarkan pendapat anak-anak sama pentingnya untuk memenuhi kebutuhan emosional anak. Dilansir dari Psychology Today, orangtua harus mampu mengajarkan anak cara mengekspresikan perasaannya yang juga nantinya bermanfaat pada kehidupannya. Orangtua yang mendengarkan anaknya juga mengajarkan cara berkomunikasi yang baik sehingga anak mampu memiliki hubungan baik dalam keluarga maupun lingkungan sosial."
+            android:layout_marginHorizontal="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hindari Abaikan Pendapat Anak"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/textcolor_black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textcolor_black"
+            android:layout_marginBottom="5dp"
+            android:justificationMode="inter_word"
+            android:text="Banyak orangtua yang kerap tidak mendengarkan pendapat anaknya. Padahal, mendengarkan dan didengarkan dengan baik menjadi salah satu ciri komunikasi yang baik antara anak dan orangtua. Dengan begitu, proses komunikasi berjalan dengan baik dan mengurangi risiko salah paham antara anak dan orangtua. Lalu, bagaimana orangtua tidak pernah mau mendengarkan pendapat anak? Kondisi ini menyebabkan komunikasi antara orangtua dan anak hanya menjadi satu arah. Jika kebiasaan ini terus-menerus dilakukan oleh orangtua, bukan tidak mungkin hal ini berdampak negatif pada emosional anak. "
+            android:layout_marginHorizontal="25dp"/>
+    </LinearLayout>
+</ScrollView>
