@@ -40,14 +40,13 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
             android:background="@color/white"
-            android:onClick="artikel1"
+            android:id="@+id/artikel1"
             android:layout_marginHorizontal="30dp"
             app:cardCornerRadius="25dp"
             android:elevation="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="artikel1"
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="match_parent"
@@ -72,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
-            android:onClick="artikel2"
+            android:id="@+id/artikel2"
             android:background="@color/white"
             android:layout_marginHorizontal="30dp"
             app:cardCornerRadius="25dp"
@@ -105,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
-            android:onClick="artikel3"
+            android:id="@+id/artikel3"
             android:background="@color/white"
             android:layout_marginHorizontal="30dp"
             app:cardCornerRadius="25dp"
@@ -137,7 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
-            android:onClick="artikel4"
+            android:id="@+id/artikel4"
             android:background="@color/white"
             android:layout_marginHorizontal="30dp"
             app:cardCornerRadius="25dp"
