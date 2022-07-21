@@ -24,6 +24,5 @@ public class VideoHariIni extends AppCompatActivity {
         setContentView(R.layout.activity_video_hari_ini);
 
         youtube_player_view = findViewById(R.id.youtube_player_view);
-        youtube_player_view.toggleFullScreen();
     }
 }

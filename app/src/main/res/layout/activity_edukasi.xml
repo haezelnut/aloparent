@@ -67,46 +67,28 @@
                 android:layout_marginLeft="30dp"
                 android:textColorHint="#515151"
                 />
-
-            <RelativeLayout
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="toVideo">
+                app:videoId="OsK1Aea2-v0"
+                app:autoPlay="false"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                />
 
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    app:cardCornerRadius="25dp"
-                    android:onClick="toVideo"
-                    >
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:onClick="toVideo"
-                        >
-
-                        <com.denzcoskun.imageslider.ImageSlider
-                            android:id="@+id/view_pager_edukasi"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:elevation="10dp"
-                            android:textAlignment="textStart"
-                            android:textDirection="ltr" />
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/ic_play" />
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="15dp"
+                android:layout_gravity="right"
+                android:onClick="toVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#515151"
+                android:text="Video Lainnya >"
+                />
 
             <TextView
                 android:layout_marginTop="12dp"

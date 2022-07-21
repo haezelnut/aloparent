@@ -81,15 +81,15 @@ public class Edukasi extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.edukasi);
 
 
-        ImageSlider imageSlider = findViewById(R.id.view_pager_edukasi);
+        //ImageSlider imageSlider = findViewById(R.id.view_pager_edukasi);
 
-        List<SlideModel> slideModels = new ArrayList<>();
+        //List<SlideModel> slideModels = new ArrayList<>();
 
-        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agar di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
-        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"A di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
-        slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        //slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agar di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        //slideModels.add(new SlideModel(R.drawable.contoh_gambar_video2,"A di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
+        //slideModels.add(new SlideModel(R.drawable.contoh_gambar_video1,"Agra di Usian 3 Tahun Cerdas, yuk Biasakan ini dirumah"));
 
-        imageSlider.setImageList(slideModels,true);
+        //imageSlider.setImageList(slideModels,true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
