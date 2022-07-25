@@ -95,7 +95,12 @@
             android:exported="false" />
         <activity
             android:name=".View.Home"
-            android:exported="false" />
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.tictactoe"/>
+                <action android:name="com.raghav.paint"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".View.BerhasilDaftar"
             android:exported="false" />

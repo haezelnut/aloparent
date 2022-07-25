@@ -137,11 +137,12 @@ public class LoginScreen extends AppCompatActivity {
     private void sendData(String temp_Email, String temp_password) {
         progressBar.setVisibility(View.VISIBLE);
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        String URL = "http://192.168.43.247:3000/users/login";
+//        String URL = "http://192.168.43.247:3000/users/login"; //api punya arsen
+        String URL = "http://192.168.0.13:3000/users/login"; //api punya alfin
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.d("",response);
+                Log.d("Login",response);
                 if(response.equals("TRUE")){
                     getUserInfromation(temp_Email);
                 }else if(response.equals("PASSWORD FALSE")){
@@ -170,7 +171,9 @@ public class LoginScreen extends AppCompatActivity {
 
     private void getUserInfromation(String email){
         RequestQueue requestQueue1 = Volley.newRequestQueue(this);
-        String URL = "http://192.168.43.247:3000/users/"+email;
+//        String URL = "http://192.168.43.247:3000/users/"+email; //punya arsen
+        String URL = "http://192.168.0.13:3000/users/"+email; //api punya alfin
+
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
@@ -180,7 +183,7 @@ public class LoginScreen extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try{
-
+                            Log.e("user", String.valueOf(response));
                             progressBar.setVisibility(View.GONE);
                             String username = (String) response.get("username");
                             String password = (String) response.get("password");

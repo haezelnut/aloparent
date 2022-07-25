@@ -62,6 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="18dp"
                 android:text="Video untuk kamu"
+                android:textColor="#515151"
                 android:fontFamily="@font/poppins_semibold"
                 android:textSize="15dp"
                 android:layout_marginLeft="30dp"

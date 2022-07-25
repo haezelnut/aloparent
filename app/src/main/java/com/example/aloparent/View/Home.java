@@ -3,8 +3,10 @@ package com.example.aloparent.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -24,6 +26,7 @@ import com.example.aloparent.R;
 import com.example.aloparent.SharedRefrence.SharedPrefManager;
 import com.example.aloparent.SharedRefrence.UserModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -144,6 +147,10 @@ public class Home extends AppCompatActivity {
         bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setSelectedItemId(R.id.beranda);
 
+        //intent apk games ke apk lain
+        ShapeableImageView paint = findViewById(R.id.paint);
+        ShapeableImageView tictactoe = findViewById(R.id.tictactoe);
+
         inputDataAnak = (LinearLayout) findViewById(R.id.tambahDataAnak);
         layout1 = (LinearLayout) findViewById(R.id.linearLayout1);
         dataAnak = (RelativeLayout) findViewById(R.id.data_anak);
@@ -235,8 +242,37 @@ public class Home extends AppCompatActivity {
            backToLogin();
        }
 
+       paint.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               openApp("com.raghav.paint");
+           }
+       });
+
+       tictactoe.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               openApp("com.example.tictactoe");
+           }
+       });
+
 
     }
+
+    //openApp method for open other app
+    public void openApp(String packageName){
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        try {
+            intent.setComponent(new ComponentName(packageName, packageName + ".MainActivity"));
+            startActivity(intent);
+        } catch(Exception e) {
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setData(Uri.parse("market://details?id=" + packageName));
+            startActivity(intent);
+        }
+    }
+
     private void backToLogin(){
         startActivity(new Intent(getApplicationContext(), LoginScreen.class));
         finish();
